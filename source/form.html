@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__site-list">
+          <li class="site-list__item site-list_item--active">
+            <a>Главная</a>
+            <a class="item-close" href="#">
+              <span class="visually-hidden">Закрыть</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="site-list__item"><a href="photo.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="photo.html">HTML Academy</a></li>
+          <li class="site-list__item-logo">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Sedona">
+            </a>
+            <button class="main-nav_toggle" type="button">Открыть меню</button>
+          </li>
+        </ul>
+        <a class="page-main__logo">
+          <img src="img/logotype-mobile.png" width="320" height="389" alt="Логотип Sedona">
+        </a>
+      </nav>
+    </header>
+
+    <main class="page-form">
+      <h2 class="visually-hidden">Отзывы</h2>
+
+      <div class="container">
+
+        <section class="coment">
+          <h3 class="coment__header">Оставьте свой отзыв</h3>
+          <p class="coment__discription">Помогите нашим отелям стать лучше!<br>оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</p>
+        </section>
+
+        <section class="name">
+          <h3 class="name__header">Представьтесь:</h3>
+          <form class="name__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="name__discription">
+              <label class="name__box" for="username-field">ИМЯ*:</label>
+              <input class="name__user" id="username-field" type="text" name="username" placeholder="Петр" required autofocus >
+            </p>
+            <p class="name__discription">
+              <label class="name__box" for="usersurname-field">ФАМИЛИЯ*:</label>
+              <input class="name__surname" id="usersurname-field" type="text" name="usersurname" placeholder="Иванов" required>
+            </p>
+            <p class="name__discription">
+              <label class="name__box" for="secondname-field">ОТЧЕСТВО:</label>
+              <input class="name__secondname" id="secondname-field" type="text" name="secondname" placeholder="Александрович">
+            </p>
+          </form>
+        </section>
+
+        <section class="information">
+          <h3 class="information__header">Контактная информация:</h3>
+          <form class="information__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="information__discription">
+              <label for="tel">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+              <input type="tel" name="tel" placeholder="Введите телефон" required><button class="telephone"><img src="img/logotype-mobile.png" width="20" height="20" alt="Tрубка"></img></button>
+            </p>
+            <p class="information__discription">
+              <label for="tel">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+              <input type="email" name="email" placeholder="Введите e-mail" required><button class="messege"><img src="img/logotype-mobile.png" width="20" height="20" alt="Конвертик"></img></button>
+            </p>
+          </form>
+        </section>
+
+        <section class="impression">
+          <h3 class="impression__header">Ваше общее впечатленние:</h3>
+          <form class="impression__form" action="https://echo.htmlacademy.ru" method="get">
+            <ul class="impression__list">
+              <li class="impression__item">
+                <input class="impression__item-radio" type="radio" name="setka" id="impression-plus" checked>
+                <label for="impression-plus">Скорее положительное</label>
+              </li>
+              <li class="impression__item">
+                <input class="impression__item-radio" type="radio" name="setka" id="impression-min">
+                <label for="filter-fixed">Скорее отрицательное</label>
+              </li>
+              <li class="impression__item">
+                <input class="impression__item-radio" type="radio" name="setka" id="impression-middle">
+                <label for="filter-rubber">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </form>
+        </section>
+
+        <section class="attraction">
+          <h3 class="attraction__header">Посещение достопремечательности:</h3>
+          <form class="attraction__form" action="https://echo.htmlacademy.ru" method="get">
+            <ul class="attraction__list">
+              <li class="attraction__item">
+                <input class="attraction__item-checkbox" type="checkbox" name="bridge" id="attraction-bridge" checked>
+                <label for="attraction-bridge">Мост Дьявола</label>
+              </li>
+              <li class="attraction__item">
+                <input class="attraction__item-checkbox" type="checkbox" name="bell" id="attraction-bell" checked>
+                <label for="attraction-bell">Гора-Колокол</label>
+              </li>
+              <li class="attraction__item">
+                <input class="attraction__item-checkbox" type="checkbox" name="park" id="attraction-park" checked>
+                <label for="attraction-park">Слайд-парк</label>
+              </li>
+              <li class="attraction__item">
+                <input class="attraction__item-checkbox" type="checkbox" name="crag" id="attraction-crag">
+                <label for="attraction-crag">Красные скалы</label>
+              </li>
+            </ul>
+          </form>
+        </section>
+
+        <section class="glory">
+          <h3 class="glory__header">Опишите свои эмоции:</h3>
+          <form class="glory__form" action="https://echo.htmlacademy.ru" method="get">
+            <textarea class="glory__letter-box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+          </form>
+          <button class="glory__button" type="submit">Отправить отзыв</button>
+        </section>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__social social">
+        <b class="social__title">#VISITSEDONA</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твитере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютюбе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>

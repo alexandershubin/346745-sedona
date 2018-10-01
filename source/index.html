@@ -8,32 +8,34 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <ul class="main-nav__site-list">
-          <li class="site-list__item site-list_item--active">
-            <a>Главная</a>
-            <a class="item-close" href="#">
-              <span class="visually-hidden">Закрыть</span>
-              <svg></svg>
-            </a>
-          </li>
-          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          <li class="site-list__item-logo">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Sedona">
-            </a>
-            <button class="main-nav_toggle" type="button">Открыть меню</button>
-          </li>
-        </ul>
-        <a class="page-main__logo">
-          <img src="img/logotype-mobile.png" width="320" height="389" alt="Логотип Sedona">
-        </a>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+              <a class="site-list__item-close" href="#">
+                <span class="site-list__item visually-hidden">Закрыть</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+            <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            <li class="site-list__item-logo">
+              <a href="https://htmlacademy.ru/intensive/adaptive">
+                <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Sedona">
+              </a>
+              <button class="site-list__toggle" type="button">Открыть меню</button>
+            </li>
+          </ul>
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logotype-mobile.png" width="320" height="389" alt="Логотип Sedona">
+          </a>
+        </div>
       </nav>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Welcome to Sedona</h1>
+      <h1 class="page-main__title visually-hidden">Welcome to Sedona</h1>
       <div class="container">
         <section class="main-picture">
           <h2>Седона-небольшой городок в аризоне<br>заслуживающий большего</h2>
@@ -42,25 +44,25 @@
 
         <section class="features">
           <div class="features__wrapper">
-            <h2 class="visually-hidden">Особенности</h2>
-            <h3 class="feature__header">Настоящий городок</h3>
-            <span class="feature__number">-№1-</span>
-            <p class="feature__sentens">Седона не атракцион для туристов,<br> там течет своя жизнь</p>
+            <h2 class="features__title visually-hidden">Особенности</h2>
+            <h3 class="features__header">Настоящий городок</h3>
+            <span class="features__number">-№1-</span>
+            <p class="features__sentens">Седона не атракцион для туристов,<br> там течет своя жизнь</p>
             <a class="page-main__logo">
               <img src="img/logotype-mobile.png" width="320" height="260" alt="Логотип Sedona">
             </a>
-            <ul class="feature__list">
-              <li class="feature__item feature_item--home">
-                <h3 class="feature__title">Жилье</h3>
-                <p class="feature__description">Рекодмендуем пожить в настоящем<br>мотеле, все как в кино!</p>
+            <ul class="features__list">
+              <li class="features__item features__item--home">
+                <h3 class="features__title">Жилье</h3>
+                <p class="features__description">Рекодмендуем пожить в настоящем<br>мотеле, все как в кино!</p>
               </li>
-              <li class="feature__item feature_item--gifts">
-                <h3 class="feature__title">Сувениры</h3>
-                <p class="feature__description">Не только китайского, но и местного производства!</p>
+              <li class="features__item features__item--gifts">
+                <h3 class="features__title">Сувениры</h3>
+                <p class="features__description">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="feature__item feature_item--food">
-                <h3 class="feature__title">Еда</h3>
-                <p class="feature__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              <li class="features__item features__item--food">
+                <h3 class="features__title">Еда</h3>
+                <p class="features__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
             </ul>
           </div>
@@ -133,7 +135,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="main-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>

@@ -25,7 +25,7 @@
         <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/logotype-mobile.svg" width="226" height="30" alt="Sedona">
         </a>
-        <button class="site-list__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
     </header>
 
@@ -75,17 +75,19 @@
           <source src="http://placehold.ogg" type="video/ogg">
           <source src="http://placehold.webm" type="video/webm">
         </video>
-        <div id = "video-controls">
-          <button type = "button" id = "play-pause"> Play </button>
-          <input type = "range" id = "speed-bar" min = "0" max = "1" step = "0.1">
-          <button type = "button" id = "format-screen">CC</button>
-          <button type = "button" id = "full-screen"> Полноэкранный </button>
+        <div class="video__vedeo-bar">
+          <input type="range" id = "speed-bar" min = "0" max = "10" step = "1">
+        </div>
+        <div id = "video__controls">
+          <button type="button" id = "play-pause"> Play </button>
+          <button type="button" id = "format-screen">CC</button>
+          <button type="button" id = "full-screen"> Полноэкранный </button>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <p class="social__title">#VISITSEDONA</p>
+      <p class="main-footer__title">#VISITSEDONA</p>
       <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твитере</a>

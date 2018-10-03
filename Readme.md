@@ -2,6 +2,7 @@
 
 * Студент: [Александр Шубин](https://up.htmlacademy.ru/adaptive/15/user/346745).
 * Наставник: [Владислав & Балабанович](https://htmlacademy.ru/profile/balabanovich).
+
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**

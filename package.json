@@ -36,5 +36,9 @@
   ],
   "engines": {
     "node": "8.12"
+  },
+  "dependencies": {
+    "editorconfig": "^0.15.0",
+    "gulp-lintspaces": "^1.0.0"
   }
 }

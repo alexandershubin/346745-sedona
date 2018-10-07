@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -22,15 +25,24 @@
             <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-        <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logotype-mobile.svg" width="226" height="30" alt="Sedona">
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="page-header__logo main-logo">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="main-logo" src="../../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотоип">
+          </a>
+          <button class="page-header__toggle" type="button">
+            <img src="../../img/icon-menu.svg" width="23" height="21" alt="Логотоип">
+          </button>
+        </div>
       </nav>
     </header>
 
     <main class="page-photo">
       <h2 class="visually-hidden">Фото и видео</h2>
+      <div class="avatar">
+        <img class="avatar__logo" src="../../img/back-mobile.jpg" width="320" height="389" alt="Логотоип">
+        <img class="avatar__text" src="../../img/text-sedona.svg" width="282" height="214" alt="текст">
+        <img class="avatar__corner" src="../../img/bg-intro-triangle-mobile.svg" width="320" height="57" alt="нижний угол">
+      </div>
 
       <section class="pictures">
         <h3 class="pictures__header">Фото и видео</h3>
@@ -38,28 +50,28 @@
         <ul class="pictures__list">
           <li class="pictures__item">
             <a class="pictures__item__img" href="#">
-              <img src="http://placehold.it/150x100" alt="фото 1">
+              <img src="../../img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="фото 1">
             </a>
             <h4 class="pictures__item__title">Народные просторы</h4>
             <p class="pictures__item__writer">Автор фото: Борис</p>
           </li>
           <li class="pictures__item">
             <a class="pictures__item__img" href="#">
-              <img src="http://placehold.it/150x100" alt="фото 2">
+              <img src="../../img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="фото 2">
             </a>
             <h4 class="pictures__item__title">Местная растительность</h4>
             <p class="pictures__item__writer">Автор фото: Сергей</p>
           </li>
           <li class="pictures__item">
             <a class="pictures__item__img" href="#">
-              <img src="http://placehold.it/150x100" alt="фото 3">
+              <img src="../../img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="фото 3">
             </a>
             <h4 class="pictures__item__title">Дорога на север</h4>
             <p class="pictures__item__writer">Автор фото: Петр</p>
           </li>
           <li class="pictures__item">
             <a class="pictures__item__img" href="#">
-              <img src="http://placehold.it/150x100" alt="фото 4">
+              <img src="../../img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="фото 4">
             </a>
             <h4 class="pictures__item__title">Мост Дьявола</h4>
             <p class="pictures__item__writer">Автор фото: Антон</p>
@@ -70,8 +82,9 @@
       <section class="video">
         <h3 class="video__header">Все еще сомневаетесь?</h3>
         <p class="video__discription">Смотрите видеопризентацию и<br>скорее за билетами, пока они не<br>подорожали в очередной раз!</p>
+        <img src="../../img/video-mobile@1x.jpg" width="320" height="201">
         <video controls preload="auto" width="320" height="201">
-          <source src="http://placehold.mp4" type="video/mp4">
+          <source src="http://placehold.mpg4" type="video/mpg4">
           <source src="http://placehold.ogg" type="video/ogg">
           <source src="http://placehold.webm" type="video/webm">
         </video>

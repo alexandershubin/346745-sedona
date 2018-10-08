@@ -1,3 +1,24 @@
 .main-nav {
-  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 225px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 770px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
 }

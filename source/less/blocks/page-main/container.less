@@ -1,3 +1,21 @@
 .container {
   text-align: center;
 }
+
+.container__corner {
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .container__corner {
+    width: 705px;
+    margin-bottom: -9px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .container__corner {
+    width: 705px;
+  }
+}

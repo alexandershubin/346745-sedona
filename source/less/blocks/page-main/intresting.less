@@ -1,4 +1,10 @@
 .intresting {
+  width: 250px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-left: 40px;
   background-color: #ffffff;
 }
 
@@ -7,6 +13,7 @@
 }
 
 .intresting__discription {
+  padding-bottom: 20px;
   color: #333333;
 }
 
@@ -17,4 +24,17 @@
   background-color: #81b3d2;
   color: white;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .intresting {
+    width: 705px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .intresting {
+    width: 1200px;
+  }
 }

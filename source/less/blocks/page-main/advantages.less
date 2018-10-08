@@ -1,4 +1,10 @@
 .advantages {
+  width: 238px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-left: 40px;
   background-color: #eeeeee;
 }
 
@@ -10,4 +16,25 @@
 
 .advantages__small p {
   color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 770px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 1200px;
+  }
+
+  .advantages__small {
+    width: 300px;
+  }
 }

@@ -1,0 +1,30 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page-header__logo {
+  height: 125px;
+}
+
+.page-header__toggle {
+  background-color: #81b3d2;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    height: 125px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    height: 125px;
+  }
+}
+
+.page-header,
+.page-header__logo {
+  .no-outline();
+}

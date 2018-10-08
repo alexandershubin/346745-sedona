@@ -1,0 +1,40 @@
+body {
+  background: @body-background url("../img/bg-back-mobile@1x.jpg") no-repeat 0 300px;
+  background-size: 720px auto;
+  min-height: 500px;
+}
+
+
+@media (min-width: @tablet-width) {
+  body {
+    background: @body-background url("../img/bg-back-tablet@1x.jpg") no-repeat 0 60px;
+    background-size: 1178px auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background: @body-background url("../img/bg-back-desktop@1x.jpg") no-repeat 0 60px;
+    background-size: 1391px auto;
+  }
+}
+
+.differences__picture img {
+  background: @body-background url("../img/main-city-mobile@1x.jpg");
+  background-size: 720px auto;
+}
+
+
+@media (min-width: @tablet-width) {
+  .differences__picture img {
+    background: @body-background url("../img/main-city-tablet@1x.jpg");
+    background-size: 1178px auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .differences__picture img {
+    background: @body-background url("../img/main-city-desktop@1x.jpg");
+    background-size: 1391px auto;
+  }
+}

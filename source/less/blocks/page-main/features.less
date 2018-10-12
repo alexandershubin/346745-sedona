@@ -1,7 +1,41 @@
+.features {
+  width: 238px;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+}
+
 .features__small h3 {
   font-size: 18px;
 }
 
 .features__small p {
   color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    width: 770px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features__small {
+    width: 170px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .features {
+    width: 1200px;
+    background-color: white;
+  }
+
+  .features__small {
+    width: 270px;
+  }
 }

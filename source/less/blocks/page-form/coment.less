@@ -1,17 +1,37 @@
-.coment__header {
+.coment p {
+  margin: 0 auto;
+  color: #333333;
+}
+
+.coment h3 {
   font-size: 18px;
-  line-height: 26px;
+  margin: 0 auto;
+  color: #333333;
 }
 
-.coment__discription {
-  line-height: 24px;
+.coment {
+  width: 240px;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-left: 40px;
 }
 
-.coment__button {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  background-color: #81b3d2;
-  color: white;
-  text-transform: uppercase;
+@media (min-width: @tablet-width) {
+  .coment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 690px;
+    background-color: white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .coment {
+    width: 1120px;
+    background-color: white;
+  }
 }

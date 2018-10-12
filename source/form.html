@@ -3,56 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/outlines.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-        <div class="page-header__logo main-logo">
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="main-logo" src="../../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотоип">
-          </a>
+    <div class="container">
+      <header class="page-header">
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
           <button class="page-header__toggle" type="button">
             <img src="../../img/icon-menu.svg" width="23" height="21" alt="Логотоип">
           </button>
+        </nav>
+        <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-header__logo-image" src="../../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотоип">
+        </a>
+      </header>
+
+      <main class="page-form">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="avatar">
+          <img class="avatar__text" src="../../img/text-sedona.svg" width="282" height="214" alt="текст">
         </div>
-      </nav>
-    </header>
+          <img class="container__corner" src="../../img/bg-intro-triangle-mobile.svg" width="325" height="57" alt="нижний угол">
+          <section class="wrapper">
+            <h3>Оставьте свой отзыв</h3>
+            <p>Помогите нашим отелям стать лучше!<br>оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</p>
+          </section>
 
-    <main class="page-form">
-      <h2 class="visually-hidden">Отзывы</h2>
-      <div class="avatar">
-        <img class="avatar__logo" src="../../img/back-mobile.jpg" width="320" height="389" alt="Логотоип">
-        <img class="avatar__text" src="../../img/text-sedona.svg" width="282" height="214" alt="текст">
-        <img class="avatar__corner" src="../../img/bg-intro-triangle-mobile.svg" width="320" height="57" alt="нижний угол">
-      </div>
-      <div class="container">
-        <section class="coment">
-          <h3 class="coment__header">Оставьте свой отзыв</h3>
-          <p class="coment__discription">Помогите нашим отелям стать лучше!<br>оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</p>
-        </section>
-
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <section class="coment">
-            <h3 class="coment__header">Представьтесь:</h3>
-            <div class="name">
+          <form class="coment" action="https://echo.htmlacademy.ru" method="post">
+            <section class="name">
+              <h3 class="name__header">Представьтесь:</h3>
               <div class="name__discription">
                 <label class="name__box" for="username-field">ИМЯ*:</label>
                 <input class="name__user" id="username-field" type="text" name="username" placeholder="Петр" required autofocus >
@@ -65,12 +64,10 @@
                 <label class="name__box" for="secondname-field">ОТЧЕСТВО:</label>
                 <input class="name__user" id="secondname-field" type="text" name="secondname" placeholder="Александрович">
               </div>
-            </div>
-          </section>
+            </section>
 
-          <section class="coment">
-            <h3 class="coment__header">Контактная информация:</h3>
-            <div class="information">
+            <section class="information">
+              <h3 class="information__header">Контактная информация:</h3>
               <div class="information__discription">
                 <label class="information__box" for="tel-number">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
                 <input class="information__user" id="tel-number" type="tel" name="tel" placeholder="Введите телефон" required>
@@ -85,12 +82,10 @@
                   <img src="img/logotype-mobile.png" width="20" height="20" alt="Конвертик">
                 </button>
               </div>
-            </div>
-          </section>
+            </section>
 
-          <section class="coment">
-            <h3 class="coment__header">Ваше общее впечатленние:</h3>
-            <div class="impression">
+            <section class="impression">
+              <h3 class="impression__header">Ваше общее впечатленние:</h3>
               <ul class="impression__list">
                 <li class="impression__item">
                   <input class="impression__item-radio" type="radio" name="setka" id="impression-plus" checked>
@@ -105,12 +100,10 @@
                   <label class="impression__item-plus" for="impression-middle">Затрудняюсь ответить</label>
                 </li>
               </ul>
-            </div>
-          </section>
+            </section>
 
-          <section class="coment">
-            <h3 class="coment__header">Посещение достопремечательности:</h3>
-            <div class="attraction">
+            <section class="attraction">
+              <h3 class="attraction__header">Посещение<br>достопремечательности:</h3>
               <ul class="attraction__list">
                 <li class="attraction__item">
                   <input class="attraction__item-checkbox" type="checkbox" name="bridge" id="attraction-bridge" checked>
@@ -129,37 +122,37 @@
                   <label class="attraction__item-picture" for="attraction-crag">Красные скалы</label>
                 </li>
               </ul>
-            </div>
-          </section>
+            </section>
 
-          <section class="coment">
-            <h3 class="coment__header">Опишите свои эмоции:</h3>
-            <div class="glory">
-              <textarea class="glory__letter-box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
-            </div>
-            <button class="coment__button" type="submit">Отправить отзыв</button>
-          </section>
-        </form>
-      </div>
-    </main>
+            <section class="glory">
+              <div>
+                <h3 class="glory__header">Опишите свои эмоции:</h3>
+                  <textarea class="glory__letter-box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder= "Опишите подробно все свои восторг"></textarea>
+              </div>
+              <button class="glory__button" type="submit">Отправить отзыв</button>
+            </section>
+          </form>
+        </div>
+      </main>
 
-    <footer class="main-footer">
-      <p class="main-footer__title">#VISITSEDONA</p>
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твитере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютюбе</a>
-        </li>
-      </ul>
-      <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </footer>
+      <footer class="main-footer">
+        <p class="main-footer__title">#VISITSEDONA</p>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твитере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютюбе</a>
+          </li>
+        </ul>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

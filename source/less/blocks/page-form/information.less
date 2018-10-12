@@ -1,3 +1,8 @@
+.information {
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
 .information__user {
   font-size: 18px;
   font-weight: 700;
@@ -9,4 +14,15 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .information {
+    order: 1;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+  }
 }

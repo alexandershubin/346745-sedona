@@ -5,22 +5,35 @@
 }
 
 .page-header__logo {
-  height: 125px;
+  height: 0;
 }
 
-.page-header__toggle {
-  background-color: #81b3d2;
+.page-header__logo img {
+  position: absolute;
+  top: 272px;
+  left: 122px;
+  width: 102px;
+  height: 84px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
-    height: 125px;
+    height: 0;
+  }
+
+  .page-header__logo img {
+    top: 0;
+    left: 330px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
-    height: 125px;
+    height: 0;
+  }
+
+  .page-header__logo img {
+    left: 545px;
   }
 }
 

@@ -1,34 +1,40 @@
-.main-picture {
+.wrapper {
+  width: 320px;
   background-color: white;
   padding-bottom: 25px;
 }
 
-.main-picture img {
+.wrapper img {
   margin-top: -36px;
   width: 100%;
 }
 
-.main-picture h2 {
+.wrapper h3 {
   font-size: 18px;
+  margin: 0 auto;
+  color: #333333;
 }
 
-.main-picture p {
+.wrapper p {
+  margin: 0 auto;
   color: #333333;
 }
 
 @media (min-width: @tablet-width) {
-  .main-picture {
+  .wrapper {
     background-color: white;
   }
 }
 
 
 @media (min-width: @desktop-width) {
-  .main-picture {
+  .wrapper {
+    width: 1200px;
     background-color: white;
   }
 
-  .main-picture img {
+  .wrapper img {
     margin-top: -60px;
+    width: 1200px;
   }
 }

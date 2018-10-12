@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>Главная</a>
@@ -29,22 +29,23 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-          <button class="page-header__toggle" type="button">
-            <img src="../../img/icon-menu.svg" width="23" height="21" alt="Логотоип">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
           </button>
+          <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="../../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотоип">
+          </a>
         </nav>
-        <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-header__logo-image" src="../../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотоип">
-        </a>
       </header>
 
       <main class="page-main">
         <h1 class="visually-hidden">Welcome to Sedona</h1>
         <div class="intro">
           <img class="intro__text" src="../../img/text-sedona-index.svg" width="282" height="214" alt="текст">
-        </div>
           <img class="container__corner" src="../../img/bg-intro-triangle-mobile.svg" width="325" height="57" alt="нижний угол">
+        </div>
         <section class="main-picture">
+          <img src="../../img/bg-intro-triangle-mobile.svg" width="325" height="57" alt="нижний угол">
           <h2>Седона-небольшой городок в аризоне<br>заслуживающий большего</h2>
           <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
         </section>

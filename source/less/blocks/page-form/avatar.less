@@ -6,23 +6,39 @@
   background-image: url("../../../img/bg-back-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -191px;
+  margin-top: 55px;
 }
 
 .avatar__text {
-  height: 214;
+  height: 40px;
   width: 282;
-  padding-top: 80px;
-  padding-bottom: 35px;
+  padding-top: 51px;
 }
 
 @media (min-width: @tablet-width) {
   .avatar {
     height: 285px;
     background-position: center -104px;
+    margin-top: 0;
   }
 
   .avatar__text {
-    height: 99px;
-    width: 50%;
+    padding-top: 41px;
+    height: 80px;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .avatar__text {
+    padding-top: 103px;
+  }
+
+  .wrapper h3 {
+    padding-top: 83px;
+  }
+
+  .wrapper p {
+    padding-bottom: 19px;
   }
 }

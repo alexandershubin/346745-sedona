@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>Главная</a>
@@ -29,13 +29,30 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-          <button class="page-header__toggle" type="button">
-            <img src="../../img/icon-menu.svg" width="23" height="21" alt="Логотоип">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
           </button>
+          <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="../../img/logo-sedona-mobile.svg" width="100" height="83" alt="Логотоип">
+          </a>
         </nav>
-        <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-header__logo-image" src="../../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотоип">
-        </a>
+        <script>
+          var navMain = document.querySelector('.main-nav');
+          var navToggle = document.querySelector('.main-nav__toggle');
+
+          navMain.classList.remove('main-nav--nojs');
+
+          navToggle.addEventListener('click', function() {
+            if (navMain.classList.contains('main-nav--closed')) {
+              navMain.classList.remove('main-nav--closed');
+              navMain.classList.add('main-nav--opened');
+            } else {
+              navMain.classList.add('main-nav--closed');
+              navMain.classList.remove('main-nav--opened');
+            }
+          });
+        </script>
+
       </header>
 
       <main class="page-photo">
@@ -85,7 +102,7 @@
 
         <section class="video">
           <h3 class="video__header">Все еще сомневаетесь?</h3>
-          <p class="video__discription">Смотрите видеопризентацию и<br>скорее за билетами, пока они не<br>подорожали в очередной раз!</p>
+          <p class="video__discription">Смотрите видеопризентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <img src="../../img/video-mobile@1x.jpg" width="320" height="201">
           <video class="video__screen" controls preload="auto" width="320" height="201">
             <source src="http://placehold.mpg4" type="video/mpg4">

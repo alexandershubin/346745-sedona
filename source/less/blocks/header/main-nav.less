@@ -1,7 +1,6 @@
 .main-nav {
   position: relative;
   width: 320px;
-  min-height: 51px;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -17,13 +16,10 @@
   top: 0;
   right: 0;
   z-index: 2;
-
   display: block;
   width: 70px;
   height: 50px;
-
   background-color: #ffffff;
-
   cursor: pointer;
   border: none;
 
@@ -35,14 +31,11 @@
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
-
   position: absolute;
   top: 15px;
-  left: 17px;
-
-  width: 30px;
-  height: 3px;
-
+  left: 26px;
+  width: 26px;
+  height: 4px;
   background-color: #81b3d2;
   box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
 }
@@ -61,14 +54,11 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 24px;
-    left: 18px;
-
-    width: 36px;
-    height: 2px;
-
+    left: 25px;
+    width: 30px;
+    height: 4px;
     background-color: #ffffff;
   }
 
@@ -94,6 +84,7 @@
 @media (max-width: @mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
+    min-height: 0;
   }
 }
 
@@ -102,6 +93,11 @@
   .main-nav {
     width: 770px;
     min-height: 0;
+    background-color: #ffffff;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
 

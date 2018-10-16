@@ -56,13 +56,16 @@
             }
           });
         </script>
-
       </header>
 
       <main class="page-main">
         <h1 class="visually-hidden">Welcome to Sedona</h1>
         <div class="intro">
-          <img class="intro__text" src="../../img/text-sedona-index.svg" width="282" height="214" alt="текст">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../../img/text-sedona-index.svg">
+            <source media="(min-width: 768px)" srcset="../../img/text-sedona-index.svg">
+            <img class="intro__text" src="../../img/text-sedona-index.svg" width="282" height="214" alt="текст">
+          </picture>
           <picture>
             <source media="(min-width: 1200px)" srcset="../../img/bg-intro-triangle-desktop.svg" >
             <source media="(min-width: 768px)" srcset="../../img/bg-intro-triangle-tablet.svg">
@@ -75,14 +78,18 @@
         </section>
 
         <section class="differences">
-          <img class="differences__corner" src="../../img/bg-triangle.svg" width="320" height="37" alt="нижний угол">
+            <img class="differences__corner" src="../../img/bg-triangle.svg" width="320" height="37" alt="нижний угол">
           <div class="differences__text">
             <h3>Настоящий городок</h3>
             <span>&#8212; №1 &#8212;</span>
             <p>Седона не атракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="differences__picture">
-            <img src="../../img/main-city-mobile@1x.jpg" width="320" height="260" alt="Логотип Sedona">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../../img/main-city-desktop.jpg 1x, ../../img/main-city-desktop@1x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../../img/main-city-tablet.jpg 1x, ../../img/main-city-tablet@1x.jpg 2x">
+              <img src="../../img/main-city-mobile@1x.jpg" srcset="../../img/main-city-mobile@1x.jpg 2x" width="320" height="260" alt="Логотип Sedona">
+            </picture>
           </div>
         </section>
 
@@ -102,13 +109,17 @@
         </section>
 
         <section class="differences">
-          <div class="differences__text">
+          <div class="differences__text--img">
             <h3>Там есть мост дьявола</h3>
             <span>&#8212; №1 &#8212;</span>
             <p>Да, по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
           </div>
           <div class="differences__picture">
-            <img src="../../img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Логотип Sedona">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../../img/../../img/main-bridge-desktop.jpg 1x, ../../img/main-bridge-desktop@1x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../../img/../../img/main-bridge-tablet.jpg 1x, ../../img/../../img/main-bridge-tablet@1x.jpg 2x">
+              <img src="../../img/main-bridge-mobile.jpg" srcset="../../img/main-bridge-mobile@1x.jpg 2x" width="320" height="260" alt="Логотип Sedona">
+            </picture>
           </div>
         </section>
 

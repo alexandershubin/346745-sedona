@@ -43,11 +43,23 @@
   line-height: 29px;
 }
 
+.site-list__white {
+  position: absolute;
+  background-color: #ffffff;
+  width: 320px;
+  height: 56px;
+  border-bottom: 1px solid #ffffff;
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .site-list__white {
+    display: none;
   }
 
   .site-list__item {

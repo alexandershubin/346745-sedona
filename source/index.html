@@ -17,7 +17,7 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фото и видео</a>
@@ -29,6 +29,9 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
+          <div class="site-list__white">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -111,45 +114,53 @@
         <section class="differences">
           <div class="differences__text--img">
             <h3>Там есть мост дьявола</h3>
-            <span>&#8212; №1 &#8212;</span>
+            <span>&#8212; №2 &#8212;</span>
             <p>Да, по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
           </div>
           <div class="differences__picture">
             <picture>
-              <source media="(min-width: 1200px)" srcset="../../img/../../img/main-bridge-desktop.jpg 1x, ../../img/main-bridge-desktop@1x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="../../img/../../img/main-bridge-tablet.jpg 1x, ../../img/../../img/main-bridge-tablet@1x.jpg 2x">
-              <img src="../../img/main-bridge-mobile.jpg" srcset="../../img/main-bridge-mobile@1x.jpg 2x" width="320" height="260" alt="Логотип Sedona">
+              <source media="(min-width: 1200px)" srcset="../../img/main-bridge-desktop.jpg 1x, ../../img/main-bridge-desktop@1x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../../img/main-bridge-tablet.jpg 1x, ../../img/main-bridge-tablet@1x.jpg 2x">
+              <img src="../../img/main-bridge-mobile@1x.jpg" srcset="../../img/main-bridge-mobile@1x.jpg 2x" width="320" height="260" alt="Логотип Sedona">
             </picture>
           </div>
         </section>
 
         <section class="advantages">
-          <div class="advantages__small">
+          <div class="advantages__small--square">
             <h3>Небольшая площадь</h3>
             <span>&#8212; №3 &#8212;</span>
-            <p>Все интересные места находятся<br>очень близко</p>
+            <p>Все интересные места находятся очень близко</p>
           </div>
-          <div class="advantages__small">
+          <div class="advantages__small--road">
             <h3>Красивая дорога</h3>
             <span>&#8212; №4 &#8212;</span>
-            <p>Ехать в Седону из Лас-Вегаса<br>совсем не скучно</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </div>
-          <div class="advantages__small">
+          <div class="advantages__small--tourist">
             <h3>Мало туристов</h3>
             <span>&#8212; №5 &#8212;</span>
-            <p>Большинство едет в гранд каньен<br>и толпится там</p>
+            <p>Большинство едет в гранд каньен и толпится там</p>
           </div>
         </section>
 
         <section class="intresting">
           <h3 class="intresting__header">Заинтересовались?</h3>
-          <p class="intresting__discription">Укажите предполагаемые даты<br>поездки и мы покажем Вам лучшие предложения гостиниц в седоне</p>
+          <p class="intresting__discription">Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в седоне</p>
           <a class="intresting__find button" href="find.html">Найти гостиницу</a>
         </section>
 
         <section class="main-map">
           <h2 class="visually-hidden">Карта</h2>
-          <img src="../../img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+          <div class="main-map__picture">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../../img/bg-map-desktop.jpg 1x,
+              ../../img/bg-map-desktop@1x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../../img/bg-map-tablet.jpg 1x,
+              ../../img/bg-map-tablet@1x.jpg 2x">
+              <img src="../../img/bg-map-mobile@1x.jpg" srcset="../../img/bg-map-mobile@1x.jpg 2x" width="320" height="350" alt="Карта">
+            </picture>
+          </div>
         </section>
       </main>
 

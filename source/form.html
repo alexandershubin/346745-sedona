@@ -17,7 +17,7 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фото и видео</a>
@@ -33,7 +33,11 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="../../img/logo-sedona-mobile.svg" width="100" height="83" alt="Логотоип">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../../img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../../img/logo-sedona-tablet.svg">
+              <img src="../../img/logo-sedona-mobile.svg" width="100" height="83" alt="Логотоип">
+            </picture>
           </a>
         </nav>
         <script>
@@ -52,7 +56,6 @@
             }
           });
         </script>
-
       </header>
 
       <main class="page-form">

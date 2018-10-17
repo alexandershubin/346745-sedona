@@ -1,24 +1,60 @@
 .advantages {
   margin: 0 auto;
-  padding-top: 30px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-top: 24px;
   background-color: #eeeeee;
 }
 
-.advantages__small h3 {
+.advantages__small--square h3 {
   font-size: 18px;
   margin: 0;
   padding-top: 3px;
   padding-bottom: 6px;
 }
 
-.advantages__small p {
-  color: #333333;
+.advantages__small--square p {
+  width: 280px;
   line-height: 22px;
+  color: #333333;
+  border-bottom: 1px solid #d6d6d6;
   margin: 0;
   padding-top: 12px;
-  padding-bottom: 45px;
+  margin-left: 20px;
+  padding-bottom: 26px;
+}
+
+.advantages__small--road h3 {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 6px;
+}
+
+.advantages__small--road p {
+  width: 280px;
+  line-height: 22px;
+  color: #333333;
+  border-bottom: 1px solid #d6d6d6;
+  margin: 0;
+  padding-top: 12px;
+  margin-left: 20px;
+  padding-bottom: 26px;
+}
+
+.advantages__small--tourist h3 {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 6px;
+}
+
+.advantages__small--tourist p {
+  width: 280px;
+  line-height: 22px;
+  color: #333333;
+  margin: 0;
+  padding-top: 12px;
+  margin-left: 20px;
+  padding-bottom: 26px;
 }
 
 @media (min-width: @tablet-width) {
@@ -29,13 +65,79 @@
     padding-left: 0;
   }
 
-  .advantages__small {
-    width: 128px;
+  .advantages__small--square {
+    width: 256px;
   }
 
-  .advantages__small h3 {
+  .advantages__small--square h3 {
+    width: 159px;
     font-size: 21px;
-    padding-top: 15px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 49px;
+    padding-bottom: 8px;
+  }
+
+  .advantages__small--square p {
+    width: 159px;
+    line-height: 21px;
+    color: #333333;
+    padding-left: 28px;
+    border-bottom: none;
+    margin: 0;
+    padding-top: 19px;
+    margin-left: 20px;
+    padding-bottom: 42px;
+  }
+
+  .advantages__small--road {
+    width: 256px;
+  }
+
+  .advantages__small--road h3 {
+    width: 132px;
+    font-size: 21px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 62px;
+    padding-bottom: 8px;
+  }
+
+  .advantages__small--road p {
+    width: 132px;
+    line-height: 21px;
+    color: #333333;
+    padding-left: 28px;
+    border-bottom: none;
+    margin: 0;
+    padding-top: 19px;
+    margin-left: 34px;
+    padding-bottom: 42px;
+  }
+
+  .advantages__small--tourist {
+    width: 256px;
+  }
+
+  .advantages__small--tourist h3 {
+    width: 145px;
+    font-size: 21px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 55px;
+    padding-bottom: 8px;
+  }
+
+  .advantages__small--tourist p {
+    width: 146px;
+    line-height: 21px;
+    color: #333333;
+    padding-left: 15px;
+    border-bottom: none;
+    margin: 0;
+    padding-top: 20px;
+    margin-left: 39px;
+    padding-bottom: 42px;
   }
 }
 

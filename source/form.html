@@ -29,6 +29,9 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
+          <div class="site-list__white">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -61,34 +64,41 @@
       <main class="page-form">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="avatar">
-          <img class="avatar__text" src="../../img/text-sedona.svg" width="282" height="214" alt="текст">
-          <img class="container__corner" src="../../img/bg-intro-triangle-mobile.svg" width="325" height="57" alt="нижний угол">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../../img/text-sedona.svg">
+            <source media="(min-width: 768px)" srcset="../../img/text-sedona.svg">
+            <img class="avatar__text" src="../../img/text-sedona.svg" width="282" height="214" alt="текст">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../../img/bg-intro-triangle-desktop.svg" >
+            <source media="(min-width: 768px)" srcset="../../img/bg-intro-triangle-tablet.svg">
+            <img class="avatar__corner" src="../../img/bg-intro-triangle-mobile.svg" width="325" height="57" alt="нижний угол">
+          </picture>
         </div>
-        <section class="wrapper">
-          <img src="../../img/bg-intro-triangle-mobile.svg" width="325" height="57" alt="нижний угол">
+        <section class="review">
           <h3>Оставьте свой отзыв</h3>
-          <p>Помогите нашим отелям стать лучше!оставьте отзыв о них, а также опосещенных вамидостопримечательностях</p>
+          <p>Помогите нашим отелям стать лучше!оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
 
         <form class="coment" action="https://echo.htmlacademy.ru" method="post">
           <section class="name">
-            <h3 class="name__header">Представьтесь:</h3>
+            <h3>Представьтесь:</h3>
             <div class="name__discription">
               <label class="name__box" for="username-field">ИМЯ*:</label>
               <input class="name__user" id="username-field" type="text" name="username" placeholder="Петр" required autofocus >
             </div>
             <div class="name__discription">
               <label class="name__box" for="usersurname-field">ФАМИЛИЯ*:</label>
-              <input class="name__user" id="usersurname-field" type="text" name="usersurname" placeholder="Иванов" required>
+              <input class="surname__user" id="usersurname-field" type="text" name="usersurname" placeholder="Иванов" required>
             </div>
             <div class="name__discription">
               <label class="name__box" for="secondname-field">ОТЧЕСТВО:</label>
-              <input class="name__user" id="secondname-field" type="text" name="secondname" placeholder="Александрович">
+              <input class="secondname__user" id="secondname-field" type="text" name="secondname" placeholder="Александрович">
             </div>
           </section>
 
           <section class="information">
-            <h3 class="information__header">Контактная информация:</h3>
+            <h3>Контактная информация:</h3>
             <div class="information__discription">
               <label class="information__box" for="tel-number">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
               <input class="information__user" id="tel-number" type="tel" name="tel" placeholder="Введите телефон" required>
@@ -106,7 +116,7 @@
           </section>
 
           <section class="impression">
-            <h3 class="impression__header">Ваше общее впечатленние:</h3>
+            <h3>Ваше общее впечатленние:</h3>
             <ul class="impression__list">
               <li class="impression__item">
                 <input class="impression__item-radio" type="radio" name="setka" id="impression-plus" checked>
@@ -124,7 +134,7 @@
           </section>
 
           <section class="attraction">
-            <h3 class="attraction__header">Посещение<br>достопремечательности:</h3>
+            <h3>Посещение<br>достопремечательности:</h3>
             <ul class="attraction__list">
               <li class="attraction__item">
                 <input class="attraction__item-checkbox" type="checkbox" name="bridge" id="attraction-bridge" checked>
@@ -147,7 +157,7 @@
 
           <section class="glory">
             <div>
-              <h3 class="glory__header">Опишите свои эмоции:</h3>
+              <h3>Опишите свои эмоции:</h3>
                 <textarea class="glory__letter-box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder= "Опишите подробно все свои восторг"></textarea>
             </div>
             <button class="glory__button" type="submit">Отправить отзыв</button>

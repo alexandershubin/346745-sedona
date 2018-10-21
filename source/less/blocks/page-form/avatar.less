@@ -1,6 +1,68 @@
+.avatar {
+  height: 158px;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url("../../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -231px;
+  margin-top: 55px;
+}
+
 .avatar__text {
-  width: 282px;
-  padding-right: 40px;
-  padding-bottom: 35px;
-  padding-left: 40px;
+  height: 40px;
+  width: 282;
+  padding-top: 51px;
+}
+
+.avatar__corner {
+  width: 100%;
+  padding-top: 33px;
+}
+
+@media (min-width: @tablet-width) {
+  .avatar {
+    order: 2;
+
+    height: 290px;
+    width: 100%;
+    margin-top: 0;
+
+    background-color: #ffffff;
+    background-image: url("../../../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -227px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../../img/bg-back-tablet@1x.jpg");
+      background-size: 768px auto;
+    }
+  }
+
+  .avatar__text {
+    padding-top: 95px;
+    height: 80px;
+    width: 100%;
+  }
+
+  .avatar__corner {
+    padding-top: 51px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .avatar {
+    height: 300px;
+    background-position: center -217px;
+    background-image: url("../../../img/bg-back-desktop@1x.jpg");
+    background-size: 1200px auto;
+  }
+
+  .avatar__text {
+    padding-top: 103px;
+  }
+
+  .avatar__corner {
+    padding-top: 53px;
+  }
 }

@@ -1,23 +1,45 @@
 .differences {
-  width: 320px;
   margin: 0 auto;
   background-color: #81b3d2;
   color: #ffffff;
 }
 
 .differences__corner {
-  width: 320px;
   margin-top: -1px;
 }
 
 .differences__text {
-  padding-right: 40px;
   padding-bottom: 25px;
-  padding-left: 40px;
 }
 
 .differences__text h3 {
   font-size: 18px;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 6px;
+}
+
+.differences__text p {
+  margin: 0;
+  padding-top: 13px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 21px;
+  padding-bottom: 15px;
+}
+
+.differences__text--img h3 {
+  font-size: 18px;
+  padding-top: 39px;
+  padding-bottom: 6px;
+  margin: 0;
+}
+
+.differences__text--img p {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 38px;
+  line-height: 21px;
 }
 
 .differences__picture img {
@@ -26,42 +48,102 @@
 
 @media (min-width: @tablet-width) {
   .differences {
-    width: 785px;
     display: flex;
   }
 
   .differences__text {
-    padding-right: 20px;
+    width: 256px;
     padding-top: 24px;
-    padding-left: 10px;
+  }
+
+  .differences__text h3 {
+    width: 162px;
+    font-size: 21px;
+    padding-top: 21px;
+    padding-left: 47px;
+    padding-bottom: 7px;
+  }
+
+  .differences__text p {
+    width: 162px;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 47px;
+  }
+
+  .differences__text--img h3 {
+    width: 151px;
+    font-size: 21px;
+    padding-top: 21px;
+    padding-left: 52px;
+    padding-bottom: 7px;
+  }
+
+  .differences__text--img p {
+    width: 162px;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 47px;
+  }
+
+  .differences__text--img {
+    order: 1;
+    width: 256px;
+    padding-top: 24px;
   }
 
   .differences__picture img {
-    margin-bottom: -8px;
+    width: 512px;
   }
+
 
   .differences__corner {
     display: none;
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .differences {
-    width: 1200px;
     display: flex;
   }
 
   .differences__text {
-    padding-right: 20px;
+    width: 400px;
     padding-top: 24px;
-    padding-left: 10px;
+  }
+
+  .differences__text h3 {
+    width: 216px;
+    padding-top: 29px;
+    padding-left: 90px;
+  }
+
+  .differences__text p {
+    width: 265px;
+    padding-left: 64px;
+  }
+
+  .differences__text--img {
+    width: 400px;
+    padding-top: 24px;
+  }
+
+  .differences__text--img h3 {
+    width: 151px;
+    padding-top: 29px;
+    padding-left: 124px;
+  }
+
+  .differences__text--img p {
+    width: 265px;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 47px;
   }
 
   .differences__picture img {
-    height: 255px;
     width: 800px;
-    margin-bottom: -8px;
+    height: 256px;
   }
 
   .differences__corner {

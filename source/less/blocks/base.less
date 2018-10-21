@@ -1,10 +1,22 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff") format("woff");
+}
+
 body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
   font-family: "PT Sans", "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   background-color: @body-background;
 }
@@ -14,6 +26,18 @@ img {
   height: auto;
 }
 
-.visually-hidden {
-  display: none;
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

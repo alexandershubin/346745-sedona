@@ -1,37 +1,53 @@
 .features {
-  width: 238px;
+  text-align: start;
+  padding-left: 71px;
   background-color: white;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-right: 40px;
-  padding-bottom: 25px;
-  padding-left: 40px;
+  padding-top: 35px;
+  padding-bottom: 8px;
 }
 
 .features__small h3 {
   font-size: 18px;
+  margin: 0;
 }
 
 .features__small p {
+  line-height: 21px;
   color: #333333;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 27px;
 }
 
 @media (min-width: @tablet-width) {
   .features {
-    width: 770px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 21px;
+    padding-bottom: 33px;
   }
 
   .features__small {
     width: 170px;
+  }
+
+  .features__small h3 {
+    font-size: 21px;
+    padding-top: 138px;
+    padding-bottom: 7px;
+  }
+
+  .features__small.features__small--gifts {
+    order: 3;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .features {
-    width: 1200px;
     background-color: white;
   }
 

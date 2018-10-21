@@ -1,6 +1,5 @@
 .information {
   margin: 0 auto;
-  padding-top: 30px;
 }
 
 .information__user {
@@ -20,9 +19,25 @@
   .information {
     order: 1;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 28px;
     padding-right: 40px;
     padding-bottom: 25px;
     padding-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .information h3 {
+    padding-top: 15px;
+  }
+
+  .information h3::before {
+    content: "";
+    display: block;
+    width: 274px;
+    position: absolute;
+    color: #dbdbdb;
+    left: 127px;
+    top: 1005px;
   }
 }

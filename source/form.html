@@ -14,10 +14,10 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фото и видео</a>
@@ -29,110 +29,140 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-          <button class="page-header__toggle" type="button">
-            <img src="../../img/icon-menu.svg" width="23" height="21" alt="Логотоип">
+          <div class="site-list__white">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
           </button>
+          <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../../img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../../img/logo-sedona-tablet.svg">
+              <img src="../../img/logo-sedona-mobile.svg" width="100" height="83" alt="Логотоип">
+            </picture>
+          </a>
         </nav>
-        <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-header__logo-image" src="../../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотоип">
-        </a>
+        <script>
+          var navMain = document.querySelector('.main-nav');
+          var navToggle = document.querySelector('.main-nav__toggle');
+
+          navMain.classList.remove('main-nav--nojs');
+
+          navToggle.addEventListener('click', function() {
+            if (navMain.classList.contains('main-nav--closed')) {
+              navMain.classList.remove('main-nav--closed');
+              navMain.classList.add('main-nav--opened');
+            } else {
+              navMain.classList.add('main-nav--closed');
+              navMain.classList.remove('main-nav--opened');
+            }
+          });
+        </script>
       </header>
 
       <main class="page-form">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="avatar">
-          <img class="avatar__text" src="../../img/text-sedona.svg" width="282" height="214" alt="текст">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../../img/text-sedona.svg">
+            <source media="(min-width: 768px)" srcset="../../img/text-sedona.svg">
+            <img class="avatar__text" src="../../img/text-sedona.svg" width="282" height="214" alt="текст">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../../img/bg-intro-triangle-desktop.svg" >
+            <source media="(min-width: 768px)" srcset="../../img/bg-intro-triangle-tablet.svg">
+            <img class="avatar__corner" src="../../img/bg-intro-triangle-mobile.svg" width="325" height="57" alt="нижний угол">
+          </picture>
         </div>
-          <img class="container__corner" src="../../img/bg-intro-triangle-mobile.svg" width="325" height="57" alt="нижний угол">
-          <section class="wrapper">
-            <h3>Оставьте свой отзыв</h3>
-            <p>Помогите нашим отелям стать лучше!<br>оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</p>
+        <section class="review">
+          <h3>Оставьте свой отзыв</h3>
+          <p>Помогите нашим отелям стать лучше!оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
+
+        <form class="coment" action="https://echo.htmlacademy.ru" method="post">
+          <section class="name">
+            <h3>Представьтесь:</h3>
+            <div class="name__discription">
+              <label class="name__box" for="username-field">ИМЯ*:</label>
+              <input class="name__user" id="username-field" type="text" name="username" placeholder="Петр" required autofocus >
+            </div>
+            <div class="name__discription">
+              <label class="name__box" for="usersurname-field">ФАМИЛИЯ*:</label>
+              <input class="surname__user" id="usersurname-field" type="text" name="usersurname" placeholder="Иванов" required>
+            </div>
+            <div class="name__discription">
+              <label class="name__box" for="secondname-field">ОТЧЕСТВО:</label>
+              <input class="secondname__user" id="secondname-field" type="text" name="secondname" placeholder="Александрович">
+            </div>
           </section>
 
-          <form class="coment" action="https://echo.htmlacademy.ru" method="post">
-            <section class="name">
-              <h3 class="name__header">Представьтесь:</h3>
-              <div class="name__discription">
-                <label class="name__box" for="username-field">ИМЯ*:</label>
-                <input class="name__user" id="username-field" type="text" name="username" placeholder="Петр" required autofocus >
-              </div>
-              <div class="name__discription">
-                <label class="name__box" for="usersurname-field">ФАМИЛИЯ*:</label>
-                <input class="name__user" id="usersurname-field" type="text" name="usersurname" placeholder="Иванов" required>
-              </div>
-              <div class="name__discription">
-                <label class="name__box" for="secondname-field">ОТЧЕСТВО:</label>
-                <input class="name__user" id="secondname-field" type="text" name="secondname" placeholder="Александрович">
-              </div>
-            </section>
+          <section class="information">
+            <h3>Контактная информация:</h3>
+            <div class="information__discription">
+              <label class="information__box" for="tel-number">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+              <input class="information__user" id="tel-number" type="tel" name="tel" placeholder="Введите телефон" required>
+              <button class="telephone">
+                <img src="img/logotype-mobile.png" width="20" height="20" alt="Tрубка">
+              </button>
+            </div>
+            <div class="information__discription">
+              <label class="information__box" for="email-field">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+              <input class="information__user" id="email-field" type="email" name="email" placeholder="Введите e-mail" required>
+              <button class="messege">
+                <img src="img/logotype-mobile.png" width="20" height="20" alt="Конвертик">
+              </button>
+            </div>
+          </section>
 
-            <section class="information">
-              <h3 class="information__header">Контактная информация:</h3>
-              <div class="information__discription">
-                <label class="information__box" for="tel-number">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
-                <input class="information__user" id="tel-number" type="tel" name="tel" placeholder="Введите телефон" required>
-                <button class="telephone">
-                  <img src="img/logotype-mobile.png" width="20" height="20" alt="Tрубка">
-                </button>
-              </div>
-              <div class="information__discription">
-                <label class="information__box" for="email-field">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-                <input class="information__user" id="email-field" type="email" name="email" placeholder="Введите e-mail" required>
-                <button class="messege">
-                  <img src="img/logotype-mobile.png" width="20" height="20" alt="Конвертик">
-                </button>
-              </div>
-            </section>
+          <section class="impression">
+            <h3>Ваше общее впечатленние:</h3>
+            <ul class="impression__list">
+              <li class="impression__item">
+                <input class="impression__item-radio" type="radio" name="setka" id="impression-plus" checked>
+                <label class="impression__item-plus" for="impression-plus">Скорее положительное</label>
+              </li>
+              <li class="impression__item">
+                <input class="impression__item-radio" type="radio" name="setka" id="impression-min">
+                <label class="impression__item-plus" for="impression-min">Скорее отрицательное</label>
+              </li>
+              <li class="impression__item">
+                <input class="impression__item-radio" type="radio" name="setka" id="impression-middle">
+                <label class="impression__item-plus" for="impression-middle">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </section>
 
-            <section class="impression">
-              <h3 class="impression__header">Ваше общее впечатленние:</h3>
-              <ul class="impression__list">
-                <li class="impression__item">
-                  <input class="impression__item-radio" type="radio" name="setka" id="impression-plus" checked>
-                  <label class="impression__item-plus" for="impression-plus">Скорее положительное</label>
-                </li>
-                <li class="impression__item">
-                  <input class="impression__item-radio" type="radio" name="setka" id="impression-min">
-                  <label class="impression__item-plus" for="impression-min">Скорее отрицательное</label>
-                </li>
-                <li class="impression__item">
-                  <input class="impression__item-radio" type="radio" name="setka" id="impression-middle">
-                  <label class="impression__item-plus" for="impression-middle">Затрудняюсь ответить</label>
-                </li>
-              </ul>
-            </section>
+          <section class="attraction">
+            <h3>Посещение<br>достопремечательности:</h3>
+            <ul class="attraction__list">
+              <li class="attraction__item">
+                <input class="attraction__item-checkbox" type="checkbox" name="bridge" id="attraction-bridge" checked>
+                <label class="attraction__item-picture" for="attraction-bridge">Мост Дьявола</label>
+              </li>
+              <li class="attraction__item">
+                <input class="attraction__item-checkbox" type="checkbox" name="bell" id="attraction-bell" checked>
+                <label class="attraction__item-picture" for="attraction-bell">Гора-Колокол</label>
+              </li>
+              <li class="attraction__item">
+                <input class="attraction__item-checkbox" type="checkbox" name="park" id="attraction-park" checked>
+                <label class="attraction__item-picture" for="attraction-park">Слайд-парк</label>
+              </li>
+              <li class="attraction__item">
+                <input class="attraction__item-checkbox" type="checkbox" name="crag" id="attraction-crag">
+                <label class="attraction__item-picture" for="attraction-crag">Красные скалы</label>
+              </li>
+            </ul>
+          </section>
 
-            <section class="attraction">
-              <h3 class="attraction__header">Посещение<br>достопремечательности:</h3>
-              <ul class="attraction__list">
-                <li class="attraction__item">
-                  <input class="attraction__item-checkbox" type="checkbox" name="bridge" id="attraction-bridge" checked>
-                  <label class="attraction__item-picture" for="attraction-bridge">Мост Дьявола</label>
-                </li>
-                <li class="attraction__item">
-                  <input class="attraction__item-checkbox" type="checkbox" name="bell" id="attraction-bell" checked>
-                  <label class="attraction__item-picture" for="attraction-bell">Гора-Колокол</label>
-                </li>
-                <li class="attraction__item">
-                  <input class="attraction__item-checkbox" type="checkbox" name="park" id="attraction-park" checked>
-                  <label class="attraction__item-picture" for="attraction-park">Слайд-парк</label>
-                </li>
-                <li class="attraction__item">
-                  <input class="attraction__item-checkbox" type="checkbox" name="crag" id="attraction-crag">
-                  <label class="attraction__item-picture" for="attraction-crag">Красные скалы</label>
-                </li>
-              </ul>
-            </section>
-
-            <section class="glory">
-              <div>
-                <h3 class="glory__header">Опишите свои эмоции:</h3>
-                  <textarea class="glory__letter-box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder= "Опишите подробно все свои восторг"></textarea>
-              </div>
-              <button class="glory__button" type="submit">Отправить отзыв</button>
-            </section>
-          </form>
-        </div>
+          <section class="glory">
+            <div>
+              <h3>Опишите свои эмоции:</h3>
+                <textarea class="glory__letter-box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder= "Опишите подробно все свои восторг"></textarea>
+            </div>
+            <button class="glory__button" type="submit">Отправить отзыв</button>
+          </section>
+        </form>
       </main>
 
       <footer class="main-footer">

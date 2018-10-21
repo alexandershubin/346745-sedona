@@ -1,32 +1,53 @@
 .main-picture {
-  width: 250px;
+  padding-right: 22px;
+  padding-left: 23px;
   background-color: white;
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-right: 40px;
-  padding-bottom: 25px;
-  padding-left: 40px;
+  padding-bottom: 6px;
 }
 
 .main-picture h2 {
   font-size: 18px;
+  padding-top: 39px;
+  padding-bottom: 27px;
+  margin: 0;
 }
 
 .main-picture p {
   color: #333333;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .main-picture {
-    width: 705px;
     background-color: white;
+  }
+
+  .main-picture h2 {
+    font-size: 21px;
+    padding-top: 49px;
+    padding-bottom: 28px;
+  }
+
+  .main-picture p {
+    color: #333333;
+    margin: 0;
+    padding-bottom: 44px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .main-picture {
-    width: 1200px;
     background-color: white;
+  }
+
+  .main-picture h2 {
+    margin: 0;
+    padding-top: 51px;
+    padding-bottom: 27px;
+  }
+
+  .main-picture img {
+    margin-top: -60px;
   }
 }

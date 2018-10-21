@@ -1,6 +1,6 @@
 .name {
   margin: 0 auto;
-  padding-top: 30px;
+  padding-bottom: 4px;
 }
 
 .name__box {
@@ -8,17 +8,61 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
+  margin-right: 10px;
 }
 
 .name__user {
-  font-size: 18px;
+  background-color: #f2f2f2;
+  border: none;
   font-weight: 700;
+  font-size: 16px;
   line-height: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 19px;
+}
+
+.surname__user {
+  text-align: center;
+  background-color: #f2f2f2;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 23px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.secondname__user {
+  text-align: center;
+  background-color: #f2f2f2;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 23px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.name__discription {
+  padding-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
   .name {
     order: 1;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .name {
+    width: 517px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .name h3 {
+    padding-bottom: 58px;
   }
 }

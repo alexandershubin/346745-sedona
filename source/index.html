@@ -14,10 +14,10 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фото и видео</a>
@@ -29,42 +29,77 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-          <button class="page-header__toggle" type="button">
-            <img src="../../img/icon-menu.svg" width="23" height="21" alt="Логотоип">
+          <div class="site-list__white">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
           </button>
+          <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../../img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../../img/logo-sedona-tablet.svg">
+              <img src="../../img/logo-sedona-mobile.svg" width="100" height="83" alt="Логотоип">
+            </picture>
+          </a>
         </nav>
-        <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-header__logo-image" src="../../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотоип">
-        </a>
+        <script>
+          var navMain = document.querySelector('.main-nav');
+          var navToggle = document.querySelector('.main-nav__toggle');
+
+          navMain.classList.remove('main-nav--nojs');
+
+          navToggle.addEventListener('click', function() {
+            if (navMain.classList.contains('main-nav--closed')) {
+              navMain.classList.remove('main-nav--closed');
+              navMain.classList.add('main-nav--opened');
+            } else {
+              navMain.classList.add('main-nav--closed');
+              navMain.classList.remove('main-nav--opened');
+            }
+          });
+        </script>
       </header>
 
       <main class="page-main">
         <h1 class="visually-hidden">Welcome to Sedona</h1>
         <div class="intro">
-          <img class="intro__text" src="../../img/text-sedona-index.svg" width="282" height="214" alt="текст">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../../img/text-sedona-index.svg">
+            <source media="(min-width: 768px)" srcset="../../img/text-sedona-index.svg">
+            <img class="intro__text" src="../../img/text-sedona-index.svg" width="282" height="214" alt="текст">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../../img/bg-intro-triangle-desktop.svg" >
+            <source media="(min-width: 768px)" srcset="../../img/bg-intro-triangle-tablet.svg">
+            <img class="container__corner" src="../../img/bg-intro-triangle-mobile.svg" width="325" height="57" alt="нижний угол">
+          </picture>
         </div>
-          <img class="container__corner" src="../../img/bg-intro-triangle-mobile.svg" width="325" height="57" alt="нижний угол">
         <section class="main-picture">
-          <h2>Седона-небольшой городок в аризоне<br>заслуживающий большего</h2>
-          <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
+          <h2>Седона &#8212; небольшой городок в аризоне,<br>заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </section>
 
         <section class="differences">
-          <img class="differences__corner" src="../../img/bg-triangle.svg" width="320" height="37" alt="нижний угол">
+            <img class="differences__corner" src="../../img/bg-triangle.svg" width="320" height="37" alt="нижний угол">
           <div class="differences__text">
             <h3>Настоящий городок</h3>
-            <span>-№1-</span>
-            <p>Седона не атракцион для туристов,<br> там течет своя жизнь</p>
+            <span>&#8212; №1 &#8212;</span>
+            <p>Седона не атракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="differences__picture">
-            <img src="../../img/main-city-mobile@1x.jpg" width="320" height="260" alt="Логотип Sedona">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../../img/main-city-desktop.jpg 1x, ../../img/main-city-desktop@1x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../../img/main-city-tablet.jpg 1x, ../../img/main-city-tablet@1x.jpg 2x">
+              <img src="../../img/main-city-mobile@1x.jpg" srcset="../../img/main-city-mobile@1x.jpg 2x" width="320" height="260" alt="Логотип Sedona">
+            </picture>
           </div>
         </section>
 
         <section class="features">
           <div class="features__small features__small--home">
             <h3>Жилье</h3>
-            <p>Рекодмендуем пожить в настоящем<br>мотеле, все как в кино!</p>
+            <p>Рекодмендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="features__small features__small--gifts">
             <h3>Сувениры</h3>
@@ -72,48 +107,60 @@
           </div>
           <div class="features__small features__small--food">
             <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <p>Всегда заказывайте фирменный бургер, <br>Вы не разочаруетесь!</p>
           </div>
         </section>
 
         <section class="differences">
-          <div class="differences__picture">
-            <img src="../../img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Логотип Sedona">
-          </div>
-          <div class="differences__text">
+          <div class="differences__text--img">
             <h3>Там есть мост дьявола</h3>
-            <span>-№1-</span>
+            <span>&#8212; №2 &#8212;</span>
             <p>Да, по нему можно пройти! Если вы<br> осмелитесь, конечно</p>
+          </div>
+          <div class="differences__picture">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../../img/main-bridge-desktop.jpg 1x, ../../img/main-bridge-desktop@1x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../../img/main-bridge-tablet.jpg 1x, ../../img/main-bridge-tablet@1x.jpg 2x">
+              <img src="../../img/main-bridge-mobile@1x.jpg" srcset="../../img/main-bridge-mobile@1x.jpg 2x" width="320" height="260" alt="Логотип Sedona">
+            </picture>
           </div>
         </section>
 
         <section class="advantages">
-          <div class="advantages__small">
+          <div class="advantages__small--square">
             <h3>Небольшая площадь</h3>
-            <span>-№3-</span>
-            <p>Все интересные места находятся<br>очень близко</p>
+            <span>&#8212; №3 &#8212;</span>
+            <p>Все интересные места находятся очень близко</p>
           </div>
-          <div class="advantages__small">
+          <div class="advantages__small--road">
             <h3>Красивая дорога</h3>
-            <span>-№4-</span>
-            <p>Ехать в Седону из Лас-Вегаса<br>совсем не скучно</p>
+            <span>&#8212; №4 &#8212;</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </div>
-          <div class="advantages__small">
+          <div class="advantages__small--tourist">
             <h3>Мало туристов</h3>
-            <span>-№5-</span>
-            <p>Большинство едет в гранд каньен<br>и толпится там</p>
+            <span>&#8212; №5 &#8212;</span>
+            <p>Большинство едет в гранд каньен и толпится там</p>
           </div>
         </section>
 
         <section class="intresting">
           <h3 class="intresting__header">Заинтересовались?</h3>
-          <p class="intresting__discription">Укажите предполагаемые даты<br>поездки и мы покажем Вам лучшие предложения гостиниц в седоне</p>
+          <p class="intresting__discription">Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в седоне</p>
           <a class="intresting__find button" href="find.html">Найти гостиницу</a>
         </section>
 
         <section class="main-map">
           <h2 class="visually-hidden">Карта</h2>
-          <img src="../../img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+          <div class="main-map__picture">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../../img/bg-map-desktop.jpg 1x,
+              ../../img/bg-map-desktop@1x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../../img/bg-map-tablet.jpg 1x,
+              ../../img/bg-map-tablet@1x.jpg 2x">
+              <img src="../../img/bg-map-mobile@1x.jpg" srcset="../../img/bg-map-mobile@1x.jpg 2x" width="320" height="350" alt="Карта">
+            </picture>
+          </div>
         </section>
       </main>
 

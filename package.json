@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "editorconfig": "^0.15.0",
-    "gulp-lintspaces": "^1.0.0"
+    "gulp-lintspaces": "^1.0.0",
+    "normalize.less": "^1.0.0"
   }
 }

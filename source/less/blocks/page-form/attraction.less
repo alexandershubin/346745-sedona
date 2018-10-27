@@ -1,6 +1,5 @@
 .attraction {
   margin: 0 auto;
-  padding-top: 30px;
 }
 
 .attraction__list {
@@ -10,11 +9,13 @@
   font-size: 18px;
   line-height: 26px;
   list-style: none;
-  padding-left: 35px;
+  margin: 0;
+  padding-left: 54px;
 }
 
 .attraction__item {
-  padding-right: 40px;
+  margin-bottom: 54px;
+  padding-left: 45px;
 }
 
 .attraction__item-picture {
@@ -23,10 +24,60 @@
   line-height: 26px;
 }
 
+.attraction__item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.attraction__item-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -81px;
+  top: -13px;
+  width: 46px;
+  height: 46px;
+  border-radius: 10%;
+  border: 5px solid #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+.attraction__item-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -62px;
+  width: 25px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.attraction fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.attraction legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 @media (min-width: @tablet-width) {
   .attraction {
     order: 1;
     padding-right: 75px;
     padding-left: 75px;
+    padding-top: 28px;
+  }
+
+  .attraction legend {
+    font-size: 22px;
   }
 }

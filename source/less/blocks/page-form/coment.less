@@ -1,3 +1,50 @@
+.coment input[type="tel"],
+input[type="email"] {
+  width: 202px;
+  height: 56px;
+  border: none;
+  padding-left: 22px;
+  background-color: #f2f2f2;
+}
+
+.coment input[class="name__user"] {
+  width: 208px;
+  height: 26px;
+  border: none;
+  font-size: 16px;
+  padding-left: 21px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #f2f2f2;
+}
+
+.coment input[class="name__surname"] {
+  width: 155px;
+  height: 26px;
+  text-align: left;
+  font-size: 18px;
+  border: none;
+  padding-left: 23px;
+  padding-right: 12px;
+  background-color: #f2f2f2;
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+
+.coment input[class="name__seconduser"] {
+  width: 175px;
+  height: 26px;
+  text-align: left;
+  font-size: 18px;
+  border: none;
+  padding-left: 19px;
+  background-color: #f2f2f2;
+  margin-right: -6px;
+  margin-left: 7px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .coment {
   background-color: white;
   margin: 0 auto;
@@ -7,10 +54,9 @@
 
 .coment h3 {
   font-size: 18px;
+  text-transform: uppercase;
   margin: 0 auto;
   color: #333333;
-  padding-bottom: 21px;
-  padding-top: 18px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -21,6 +67,15 @@
 
 
 @media (min-width: @tablet-width) {
+  .coment input[type="tel"],
+  input[type="email"] {
+    width: 568px;
+    height: 56px;
+    border: none;
+    padding-left: 21px;
+    background-color: #f2f2f2;
+  }
+
   .coment {
     display: flex;
     flex-wrap: wrap;
@@ -32,11 +87,39 @@
     border-top: none;
     font-size: 21px;
     color: #000000;
-    padding-bottom: 58px;
+    padding: 0;
+    padding-bottom: 0;
+  }
+
+  .coment input[class="name__user"] {
+    width: 196px;
+    font-size: 18px;
+    padding-left: 21px;
+    padding-top: 14px;
+  }
+
+  .coment input[class="name__surname"] {
+    width: 140px;
+    padding-left: 20px;
+    padding-right: 19px;
+    padding-top: 15px;
+  }
+
+  .coment input[class="name__seconduser"] {
+    width: 161px;
+    padding-left: 24px;
+    padding-top: 15px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .coment input[type="tel"],
+  input[type="email"] {
+    width: 236px;
+  }
+
   .coment {
     background-color: white;
   }

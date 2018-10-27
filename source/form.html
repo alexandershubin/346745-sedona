@@ -96,68 +96,78 @@
 
           <section class="information">
             <h3>Контактная информация:</h3>
-            <div class="information__discription">
-              <label class="information__box" for="tel-number">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
-              <input class="information__user" id="tel-number" type="tel" name="tel" placeholder="Введите телефон" required>
-              <button class="telephone">
-                <img src="img/logotype-mobile.png" width="20" height="20" alt="Tрубка">
-              </button>
-            </div>
-            <div class="information__discription">
-              <label class="information__box" for="email-field">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-              <input class="information__user" id="email-field" type="email" name="email" placeholder="Введите e-mail" required>
-              <button class="messege">
-                <img src="img/logotype-mobile.png" width="20" height="20" alt="Конвертик">
-              </button>
+            <div class="information__main">
+              <div class="information__discription">
+                <label class="information__box" for="tel-number">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+                <div class="information__telephone">
+                  <input class="information__user" id="tel-number" type="tel" name="tel" placeholder="Введите телефон" required>
+                  <a class="information__phone" href="#">
+                    <img src="img/icon-phone.svg" width="20" height="20" alt="Телефон">
+                  </a>
+                </div>
+              </div>
+              <div class="information__discription">
+                <label class="information__box" for="email-field">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+                <div class="information__telephone">
+                  <input class="information__user" id="email-field" type="email" name="email" placeholder="Введите e-mail" required>
+                  <a class="information__phone" href="#">
+                    <img src="img/icon-mail.svg" width="20" height="20" alt="Конвертик">
+                  </a>
+                </div>
+              </div>
             </div>
           </section>
 
           <section class="impression">
-            <h3>Ваше общее впечатленние:</h3>
-            <ul class="impression__list">
-              <li class="impression__item">
-                <input class="impression__item-radio" type="radio" name="setka" id="impression-plus" checked>
-                <label class="impression__item-plus" for="impression-plus">Скорее положительное</label>
-              </li>
-              <li class="impression__item">
-                <input class="impression__item-radio" type="radio" name="setka" id="impression-min">
-                <label class="impression__item-plus" for="impression-min">Скорее отрицательное</label>
-              </li>
-              <li class="impression__item">
-                <input class="impression__item-radio" type="radio" name="setka" id="impression-middle">
-                <label class="impression__item-plus" for="impression-middle">Затрудняюсь ответить</label>
-              </li>
-            </ul>
+            <fieldset>
+              <legend>Ваше общее впечатленние:</legend>
+              <ul class="impression__list">
+                <li class="impression__item">
+                  <input class="visually-hidden impression__item-radio" type="radio" name="setka" id="impression-plus" value="plus" checked>
+                  <label class="impression__item-plus" for="impression-plus">Скорее положительное</label>
+                </li>
+                <li class="impression__item">
+                  <input class="visually-hidden impression__item impression__item-radio" type="radio" name="setka" id="impression-min" value="minus">
+                  <label class="impression__item-plus" for="impression-min">Скорее отрицательное</label>
+                </li>
+                <li class="impression__item">
+                  <input class="visually-hidden impression__item impression__item-radio" type="radio" name="setka" id="impression-middle" value="plus-minus">
+                  <label class="impression__item-plus" for="impression-middle">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </fieldset>
           </section>
 
           <section class="attraction">
-            <h3>Посещение<br>достопремечательности:</h3>
-            <ul class="attraction__list">
-              <li class="attraction__item">
-                <input class="attraction__item-checkbox" type="checkbox" name="bridge" id="attraction-bridge" checked>
-                <label class="attraction__item-picture" for="attraction-bridge">Мост Дьявола</label>
-              </li>
-              <li class="attraction__item">
-                <input class="attraction__item-checkbox" type="checkbox" name="bell" id="attraction-bell" checked>
-                <label class="attraction__item-picture" for="attraction-bell">Гора-Колокол</label>
-              </li>
-              <li class="attraction__item">
-                <input class="attraction__item-checkbox" type="checkbox" name="park" id="attraction-park" checked>
-                <label class="attraction__item-picture" for="attraction-park">Слайд-парк</label>
-              </li>
-              <li class="attraction__item">
-                <input class="attraction__item-checkbox" type="checkbox" name="crag" id="attraction-crag">
-                <label class="attraction__item-picture" for="attraction-crag">Красные скалы</label>
-              </li>
-            </ul>
+            <fieldset class="attraction">
+              <legend>Посещение<br>достопремечательности:</legend>
+              <ul class="attraction__list">
+                <li class="attraction__item">
+                  <input class="visually-hidden impression__item attraction__item attraction__item-checkbox" type="checkbox" name="bridge" id="attraction-bridge" checked>
+                  <label class="attraction__item-picture" for="attraction-bridge">Мост Дьявола</label>
+                </li>
+                <li class="attraction__item">
+                  <input class="visually-hidden impression__item attraction__item attraction__item-checkbox" type="checkbox" name="bell" id="attraction-bell" checked>
+                  <label class="attraction__item-picture" for="attraction-bell">Гора-Колокол</label>
+                </li>
+                <li class="attraction__item">
+                  <input class="visually-hidden impression__item attraction__item attraction__item-checkbox" type="checkbox" name="park" id="attraction-park" checked>
+                  <label class="attraction__item-picture" for="attraction-park">Слайд-парк</label>
+                </li>
+                <li class="attraction__item">
+                  <input class="visually-hidden impression__item attraction__item attraction__item-checkbox" type="checkbox" name="crag" id="attraction-crag">
+                  <label class="attraction__item-picture" for="attraction-crag">Красные скалы</label>
+                </li>
+              </ul>
+            </fieldset>
           </section>
 
           <section class="glory">
             <div>
               <h3>Опишите свои эмоции:</h3>
-                <textarea class="glory__letter-box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder= "Опишите подробно все свои восторг"></textarea>
+                <textarea class="glory__letter-box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder= "Опишите подробно все свои восторги"></textarea>
             </div>
-            <button class="glory__button" type="submit">Отправить отзыв</button>
+            <a class="glory__button" href="#">Отправить отзыв</a>
           </section>
         </form>
       </main>

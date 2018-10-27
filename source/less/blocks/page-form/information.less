@@ -2,6 +2,17 @@
   margin: 0 auto;
 }
 
+.information h3 {
+  text-transform: uppercase;
+  padding-top: 19px;
+  padding-bottom: 20px;
+}
+
+
+.information__discription {
+  text-align: left;
+}
+
 .information__user {
   font-size: 18px;
   font-weight: 700;
@@ -13,22 +24,79 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
+  padding-left: 43px;
+}
+
+.information__telephone {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 7px;
+  margin-bottom: 12px;
+}
+
+.information__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
 }
 
 @media (min-width: @tablet-width) {
   .information {
     order: 1;
     margin: 0 auto;
-    padding-top: 28px;
-    padding-right: 40px;
+    padding-top: 0;
     padding-bottom: 25px;
-    padding-left: 40px;
+  }
+
+  .information h3 {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .information__discription {
+    text-align: left;
+    padding-top: 24px;
+  }
+
+  .information__box {
+    padding-left: 21px;
+  }
+
+
+  .information__telephone {
+    display: flex;
+    margin-left: 0;
+    margin-top: 7px;
+    margin-bottom: -1px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .information {
+    padding-top: 25px;
+  }
+
+  .information__main {
+    display: flex;
+  }
+
   .information h3 {
     padding-top: 15px;
+  }
+
+  .information__discription {
+    padding-top: 67px;
+    display: flex;
+    align-items: center;
+    margin-right: 85px;
+  }
+
+  .information__box {
+    margin-right: 17px;
+    padding-top: 9px;
   }
 
   .information h3::before {

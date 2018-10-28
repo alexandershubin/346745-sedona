@@ -143,19 +143,19 @@
               <legend>Посещение<br>достопремечательности:</legend>
               <ul class="attraction__list">
                 <li class="attraction__item">
-                  <input class="visually-hidden impression__item attraction__item attraction__item-checkbox" type="checkbox" name="bridge" id="attraction-bridge" checked>
+                  <input class="visually-hidden attraction__item attraction__item-checkbox" type="checkbox" name="bridge" id="attraction-bridge" checked>
                   <label class="attraction__item-picture" for="attraction-bridge">Мост Дьявола</label>
                 </li>
                 <li class="attraction__item">
-                  <input class="visually-hidden impression__item attraction__item attraction__item-checkbox" type="checkbox" name="bell" id="attraction-bell" checked>
+                  <input class="visually-hidden attraction__item attraction__item-checkbox" type="checkbox" name="bell" id="attraction-bell" checked>
                   <label class="attraction__item-picture" for="attraction-bell">Гора-Колокол</label>
                 </li>
                 <li class="attraction__item">
-                  <input class="visually-hidden impression__item attraction__item attraction__item-checkbox" type="checkbox" name="park" id="attraction-park" checked>
+                  <input class="visually-hidden attraction__item attraction__item-checkbox" type="checkbox" name="park" id="attraction-park" checked>
                   <label class="attraction__item-picture" for="attraction-park">Слайд-парк</label>
                 </li>
                 <li class="attraction__item attraction__item--action">
-                  <input class="visually-hidden impression__item attraction__item attraction__item-checkbox" type="checkbox" name="crag" id="attraction-crag">
+                  <input class="visually-hidden attraction__item attraction__item-checkbox" type="checkbox" name="crag" id="attraction-crag">
                   <label class="attraction__item-picture" for="attraction-crag">Красные скалы</label>
                 </li>
               </ul>
@@ -168,7 +168,7 @@
                 <textarea class="glory__letter-box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder= "Опишите подробно все свои восторги"></textarea>
             </div>
             <div class="glory__block">
-              <a class="glory__button" href="#">Отправить отзыв</a>
+              <a class="glory__find button" href="#">Отправить отзыв</a>
               <p class="glory__discription">
                 * &#8212; Обязательные поля
               </p>
@@ -215,6 +215,26 @@
           </a>
         </div>
       </footer>
+
+      <section class="gap">
+        <div class="gap__window">
+          <h2>Что то пошло не так!</h2>
+          <p>Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
+        </div>
+        <div class="gap__button small__button">
+          <a class="small__button button" href="#">ок</a>
+        </div>
+      </section>
+
+      <section class="modal">
+        <div class="modal__window">
+          <h2>Ваш отзыв отправлен!</h2>
+          <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="modal__button big__button">
+          <a class="big__button button" href="#">Закрыть окно</a>
+        </div>
+      </section>
     </div>
   </body>
 </html>

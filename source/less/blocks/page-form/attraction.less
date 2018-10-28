@@ -69,6 +69,21 @@
   margin-bottom: 30px;
 }
 
+.attraction__item-checkbox + label:hover::before,
+.attraction__item-checkbox + label:focus::before {
+  border: 5px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.attraction__item-checkbox + label:active::before {
+  border: 5px solid #d5d5d5;
+  background-color: #d5d5d5;
+}
+
+.attraction__item-checkbox + label:active::after {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .attraction {
     position: relative;

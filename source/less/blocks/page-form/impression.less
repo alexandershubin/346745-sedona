@@ -84,6 +84,21 @@
   padding-left: 41px;
 }
 
+.impression__item-radio + label:hover::before,
+.impression__item-radio + label:focus::before {
+  border: 5px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.impression__item-radio + label:active::before {
+  border: 5px solid #d5d5d5;
+  background-color: #d5d5d5;
+}
+
+.impression__item-radio + label:active::after {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .impression {
     padding-top: 0;

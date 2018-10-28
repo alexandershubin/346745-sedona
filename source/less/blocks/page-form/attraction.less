@@ -71,6 +71,7 @@
 
 @media (min-width: @tablet-width) {
   .attraction {
+    position: relative;
     order: 1;
     padding-right: 75px;
     padding-left: 75px;
@@ -79,5 +80,60 @@
 
   .attraction legend {
     font-size: 22px;
+    margin-bottom: 57px;
+  }
+
+  .attraction legend::before {
+    content: "";
+    position: absolute;
+    width: 126px;
+    border-top: 1px solid #dbdbdb;
+    top: 26px;
+    left: -76px;
+  }
+
+  .attraction legend::after {
+    content: "";
+    position: absolute;
+    width: 126px;
+    border-top: 1px solid #dbdbdb;
+    top: 26px;
+    right: -78px;
+  }
+
+  .attraction__list {
+    width: 443px;
+  }
+
+  .attraction__item {
+    margin-bottom: 62px;
+    padding-left: 45px;
+    padding-right: 30px;
+  }
+
+  .attraction__item--action {
+    margin-right: -12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attraction {
+    padding-top: 29px;
+  }
+
+  .attraction legend::before {
+    width: 282px;
+    top: 26px;
+    left: 18px;
+  }
+
+  .attraction legend::after {
+    width: 282px;
+    top: 26px;
+    right: 14px;
+  }
+
+  .attraction__list {
+    width: 940px;
   }
 }

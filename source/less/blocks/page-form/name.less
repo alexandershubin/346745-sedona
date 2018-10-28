@@ -23,6 +23,7 @@
 
 @media (min-width: @tablet-width) {
   .name {
+    position: relative;
     order: 1;
     margin: 0 auto;
   }
@@ -32,6 +33,15 @@
     padding-top: 0;
     padding-right: 107px;
     padding-bottom: 59px;
+  }
+
+  .name h3::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    border-top: 292px solid #dbdbdb;
+    top: 6px;
+    left: -57px;
   }
 
   .name__box {
@@ -48,5 +58,10 @@
 
   .name h3 {
     padding-bottom: 58px;
+    margin-left: -3px;
+  }
+
+  .name h3::before {
+    left: -81px;
   }
 }

@@ -116,13 +116,25 @@
 @media (min-width: @desktop-width) {
   .impression {
     margin: 0;
-    border-right: 1px solid #dbdbdb;
     height: 310px;
     padding-right: 83px;
     width: 517px;
   }
 
-  .impression h3 {
-    padding-left: 165px;
+  .impression legend {
+    font-size: 20px;
+    padding-left: 154px;
+  }
+
+  .impression ul {
+    padding-left: 22px;
+  }
+
+  .impression__item-radio + label::before {
+    left: 60px;
+  }
+
+  .impression__item-radio:checked + label::after {
+    left: 78px;
   }
 }

@@ -45,6 +45,7 @@
 
 @media (min-width: @tablet-width) {
   .information {
+    position: relative;
     order: 1;
     margin: 0 auto;
     padding-top: 0;
@@ -54,6 +55,24 @@
   .information h3 {
     padding-top: 15px;
     padding-bottom: 0;
+  }
+
+  .information h3::before {
+    content: "";
+    position: absolute;
+    width: 126px;
+    border-top: 1px solid #dbdbdb;
+    top: 27px;
+    left: -2px;
+  }
+
+  .information h3::after {
+    content: "";
+    position: absolute;
+    width: 126px;
+    border-top: 1px solid #dbdbdb;
+    top: 27px;
+    right: -2px;
   }
 
   .information__discription {
@@ -84,11 +103,11 @@
   }
 
   .information h3 {
-    padding-top: 15px;
+    padding-top: 19px;
   }
 
   .information__discription {
-    padding-top: 67px;
+    padding-top: 66px;
     display: flex;
     align-items: center;
     margin-right: 85px;
@@ -97,6 +116,7 @@
   .information__box {
     margin-right: 17px;
     padding-top: 9px;
+    margin-left: -26px;
   }
 
   .information h3::before {
@@ -104,8 +124,8 @@
     position: absolute;
     width: 278px;
     border-top: 1px solid #dbdbdb;
-    top: 1006px;
-    left: 125px;
+    top: 56px;
+    left: 87px;
   }
 
   .information h3::after {
@@ -113,7 +133,7 @@
     position: absolute;
     width: 278px;
     border-top: 1px solid #dbdbdb;
-    top: 1006px;
-    right: 126px;
+    top: 56px;
+    right: 84px;
   }
 }

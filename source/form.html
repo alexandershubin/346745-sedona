@@ -82,7 +82,7 @@
             <h3>Представьтесь:</h3>
             <div class="name__discription">
               <label class="name__box" for="username-field">ИМЯ*:</label>
-              <input class="name__user" id="username-field" type="text" name="username" placeholder="Петр" required autofocus >
+              <input class="name__user" id="username-field" type="text" name="username" placeholder="Петр" required>
             </div>
             <div class="name__discription">
               <label class="name__box" for="namesurname-field">ФАМИЛИЯ*:</label>
@@ -123,16 +123,16 @@
               <legend>Ваше общее впечатленние:</legend>
               <ul class="impression__list">
                 <li class="impression__item">
-                  <input class="visually-hidden impression__item-radio" type="radio" name="setka" id="impression-plus" value="plus" checked>
-                  <label class="impression__item-plus" for="impression-plus">Скорее положительное</label>
+                  <input class="visually-hidden impression__input" type="radio" name="setka" id="impression-plus" value="plus" checked>
+                  <label for="impression-plus">Скорее положительное</label>
                 </li>
                 <li class="impression__item">
-                  <input class="visually-hidden impression__item impression__item-radio" type="radio" name="setka" id="impression-min" value="minus">
-                  <label class="impression__item-plus" for="impression-min">Скорее отрицательное</label>
+                  <input class="visually-hidden impression__input" type="radio" name="setka" id="impression-min" value="minus">
+                  <label for="impression-min">Скорее отрицательное</label>
                 </li>
                 <li class="impression__item">
-                  <input class="visually-hidden impression__item impression__item-radio" type="radio" name="setka" id="impression-middle" value="plus-minus">
-                  <label class="impression__item-plus" for="impression-middle">Затрудняюсь ответить</label>
+                  <input class="visually-hidden impression__input" type="radio" name="setka" id="impression-middle" value="plus-minus">
+                  <label for="impression-middle">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
@@ -143,20 +143,20 @@
               <legend>Посещение<br>достопремечательности:</legend>
               <ul class="attraction__list">
                 <li class="attraction__item">
-                  <input class="visually-hidden attraction__item attraction__item-checkbox" type="checkbox" name="bridge" id="attraction-bridge" checked>
-                  <label class="attraction__item-picture" for="attraction-bridge">Мост Дьявола</label>
+                  <input class="visually-hidden attraction__input" type="checkbox" name="bridge" id="attraction-bridge" checked>
+                  <label for="attraction-bridge">Мост Дьявола</label>
                 </li>
                 <li class="attraction__item">
-                  <input class="visually-hidden attraction__item attraction__item-checkbox" type="checkbox" name="bell" id="attraction-bell" checked>
-                  <label class="attraction__item-picture" for="attraction-bell">Гора-Колокол</label>
+                  <input class="visually-hidden attraction__input" type="checkbox" name="bell" id="attraction-bell" checked>
+                  <label for="attraction-bell">Гора-Колокол</label>
                 </li>
                 <li class="attraction__item">
-                  <input class="visually-hidden attraction__item attraction__item-checkbox" type="checkbox" name="park" id="attraction-park" checked>
-                  <label class="attraction__item-picture" for="attraction-park">Слайд-парк</label>
+                  <input class="visually-hidden attraction__input" type="checkbox" name="park" id="attraction-park" checked>
+                  <label for="attraction-park">Слайд-парк</label>
                 </li>
                 <li class="attraction__item attraction__item--action">
-                  <input class="visually-hidden attraction__item attraction__item-checkbox" type="checkbox" name="crag" id="attraction-crag">
-                  <label class="attraction__item-picture" for="attraction-crag">Красные скалы</label>
+                  <input class="visually-hidden attraction__input" type="checkbox" name="crag" id="attraction-crag">
+                  <label for="attraction-crag">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
@@ -221,8 +221,8 @@
           <h2>Что то пошло не так!</h2>
           <p>Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
         </div>
-        <div class="gap__button small__button">
-          <a class="small__button button" href="#">ок</a>
+        <div class="gap__button small-button">
+          <a class="small-button button" href="#">ок</a>
         </div>
       </section>
 
@@ -231,8 +231,8 @@
           <h2>Ваш отзыв отправлен!</h2>
           <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         </div>
-        <div class="modal__button big__button">
-          <a class="big__button button" href="#">Закрыть окно</a>
+        <div class="modal__button big-button">
+          <a class="big-button" href="#">Закрыть окно</a>
         </div>
       </section>
     </div>

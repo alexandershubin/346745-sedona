@@ -2,6 +2,17 @@
   margin: 0 auto;
 }
 
+.information h3 {
+  text-transform: uppercase;
+  padding-top: 19px;
+  padding-bottom: 20px;
+}
+
+
+.information__discription {
+  text-align: left;
+}
+
 .information__user {
   font-size: 18px;
   font-weight: 700;
@@ -13,22 +24,99 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
+  padding-left: 43px;
+}
+
+.information__telephone {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 7px;
+  margin-bottom: 12px;
+}
+
+.information__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
 }
 
 @media (min-width: @tablet-width) {
   .information {
+    position: relative;
     order: 1;
     margin: 0 auto;
-    padding-top: 28px;
-    padding-right: 40px;
+    padding-top: 0;
     padding-bottom: 25px;
-    padding-left: 40px;
+  }
+
+  .information h3 {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .information h3::before {
+    content: "";
+    position: absolute;
+    width: 126px;
+    border-top: 1px solid #dbdbdb;
+    top: 27px;
+    left: -2px;
+  }
+
+  .information h3::after {
+    content: "";
+    position: absolute;
+    width: 126px;
+    border-top: 1px solid #dbdbdb;
+    top: 27px;
+    right: -2px;
+  }
+
+  .information__discription {
+    text-align: left;
+    padding-top: 24px;
+  }
+
+  .information__box {
+    padding-left: 21px;
+  }
+
+
+  .information__telephone {
+    display: flex;
+    margin-left: 0;
+    margin-top: 7px;
+    margin-bottom: -1px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .information {
+    padding-top: 25px;
+  }
+
+  .information__main {
+    display: flex;
+  }
+
   .information h3 {
-    padding-top: 15px;
+    padding-top: 19px;
+  }
+
+  .information__discription {
+    padding-top: 66px;
+    display: flex;
+    align-items: center;
+    margin-right: 85px;
+  }
+
+  .information__box {
+    margin-right: 17px;
+    padding-top: 9px;
+    margin-left: -26px;
   }
 
   .information h3::before {
@@ -36,8 +124,8 @@
     position: absolute;
     width: 278px;
     border-top: 1px solid #dbdbdb;
-    top: 1006px;
-    left: 125px;
+    top: 56px;
+    left: 87px;
   }
 
   .information h3::after {
@@ -45,7 +133,7 @@
     position: absolute;
     width: 278px;
     border-top: 1px solid #dbdbdb;
-    top: 1006px;
-    right: 126px;
+    top: 56px;
+    right: 84px;
   }
 }

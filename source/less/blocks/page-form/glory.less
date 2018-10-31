@@ -1,44 +1,164 @@
 .glory {
   margin: 0 auto;
-  padding-top: 30px;
+  margin-top: -12px;
 }
 
+.glory h3 {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.glory__block p {
+  display: none;
+}
+
+
 .glory__letter-box {
+  width: 257px;
+  height: 142px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  width: 279px;
-  height: 160px;
+  border: none;
+  padding-top: 15px;
+  padding-left: 18px;
   background-color: #f2f2f2;
 }
 
-.glory__button {
+.glory__discription {
+  display: none;
+}
+
+.glory__find.button {
+  display: block;
+  width: 260px;
   font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
   background-color: #81b3d2;
   color: white;
+  text-decoration: none;
   text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 43px;
+  margin-left: 20px;
+  margin-bottom: 48px;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  background-color: #669ec0;
+}
+
+.button:active {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.glory__find:disabled {
+  background-color: #e5e5e5;
 }
 
 @media (min-width: @tablet-width) {
   .glory {
+    position: relative;
     order: 1;
     padding-right: 40px;
     padding-left: 40px;
   }
 
+  .glory h3 {
+    padding-top: 34px;
+    padding-bottom: 57px;
+  }
+
+  .glory h3::before {
+    content: "";
+    position: absolute;
+    width: 126px;
+    border-top: 1px solid #dbdbdb;
+    top: 46px;
+    left: 41px;
+  }
+
+  .glory h3::after {
+    content: "";
+    position: absolute;
+    width: 126px;
+    border-top: 1px solid #dbdbdb;
+    top: 46px;
+    right: 39px;
+  }
+
   .glory__letter-box {
     font-weight: 700;
     line-height: 26px;
-    width: 648px;
-    height: 160px;
+    width: 626px;
+    height: 142px;
+    border: none;
     background-color: #f2f2f2;
+  }
+
+  .glory__block {
+    display: flex;
+  }
+
+  .glory__block p {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 69px;
+    padding-left: 160px;
+    color: #333333;
+  }
+
+  .glory__find.button {
+    width: 284px;
+    padding-right: 26px;
+    padding-left: 14px;
+    margin-top: 51px;
+    margin-left: -1px;
+    margin-bottom: 72px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .glory h3 {
+    padding-top: 32px;
+    padding-bottom: 57px;
+  }
+
+  .glory h3::before {
+    width: 279px;
+    top: 44px;
+    left: 51px;
+  }
+
+  .glory h3::after {
+    width: 279px;
+    top: 44px;
+    right: 49px;
+  }
+
   .glory__letter-box {
-    width: 960px;
-    height: 160px;
+    width: 936px;
+    height: 144px;
+    padding-left: 22px;
+  }
+
+  .glory__find.button {
+    width: 427px;
+    padding-left: 29px;
+    margin-top: 49px;
+    margin-bottom: 77px;
+  }
+
+  .glory__block p {
+    padding-top: 68px;
+    padding-left: 314px;
   }
 }

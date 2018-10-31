@@ -1,6 +1,10 @@
 .impression {
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 16px;
+}
+
+.impression h3 {
+  text-transform: uppercase;
 }
 
 .impression__list {
@@ -10,28 +14,136 @@
   padding: 0;
 }
 
-.impression__item-plus {
+.impression__item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 24px;
+}
+
+.impression__input + label::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -37px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 5px solid #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+.impression__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #333333;
+  background-color: #333333;
+}
+
+.impression fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.impression fieldset:first-child {
+  margin-bottom: 19px;
+}
+
+.impression legend {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  padding-top: 19px;
+}
+
+.impression ul {
+  padding: 0;
+  margin: 0;
+  padding-top: 11px;
+  padding-left: 17px;
+}
+
+.impression__item {
+  margin-bottom: 19px;
+  padding-left: 41px;
+}
+
+.impression__input + label:hover::before,
+.impression__input + label:focus::before {
+  border: 5px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.impression__input + label:active::before {
+  border: 5px solid #d5d5d5;
+  background-color: #d5d5d5;
+}
+
+.impression__input + label:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
   .impression {
     padding-top: 0;
   }
+
+  .impression legend {
+    font-size: 20px;
+    padding-left: 6px;
+    padding-top: 0;
+  }
+
+  .impression ul {
+    padding-top: 48px;
+    padding-left: 25px;
+  }
+
+  .impression__item {
+    margin-bottom: 28px;
+  }
+
+  .impression__input + label::before {
+    left: -60px;
+  }
+
+  .impression__input:checked + label::after {
+    left: -42px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .impression {
     margin: 0;
-    border-right: 1px solid #dbdbdb;
     height: 310px;
     padding-right: 83px;
     width: 517px;
   }
 
-  .impression h3 {
-    padding-left: 165px;
+  .impression legend {
+    font-size: 20px;
+    padding-left: 154px;
+  }
+
+  .impression ul {
+    padding-left: 22px;
+  }
+
+  .impression__input + label::before {
+    left: 60px;
+  }
+
+  .impression__input:checked + label::after {
+    left: 78px;
   }
 }

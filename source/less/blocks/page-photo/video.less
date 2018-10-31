@@ -1,8 +1,9 @@
 .video {
+  position: relative;
   margin: 0 auto;
   background-color: #ffffff;
   padding-top: 12px;
-  padding-bottom: 76px;
+  padding-bottom: 134px;
 }
 
 .video h3 {
@@ -32,9 +33,107 @@
   display: none;
 }
 
+.video__line {
+  position: absolute;
+  width: 280px;
+  height: 45px;
+  left: 20px;
+  top: 347px;
+  background: rgba(10, 10, 10, 0.6);
+}
+
+.video__bar {
+  position: absolute;
+  top: -5px;
+  left: 21px;
+  margin-top: 28px;
+  width: 235px;
+  height: 3px;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+.video__toggle {
+  position: absolute;
+  top: 19px;
+  left: 56px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.video__controls {
+  position: absolute;
+  width: 280px;
+  height: 66px;
+  left: 20px;
+  top: 392px;
+  background: #f2f2f2;
+}
+
+.video path {
+  fill: #5c6870;
+}
+
+.video__replay svg {
+  position: absolute;
+  top: 23px;
+  left: 24px;
+}
+
+.video__subtitles svg {
+  position: absolute;
+  top: 24px;
+  left: 173px;
+}
+
+.video__fullscreen polygon {
+  fill: #5c6870;
+}
+
+.video__fullscreen svg {
+  position: absolute;
+  top: 24px;
+  left: 236px;
+}
+
+.video__replay:hover path {
+  border: 4px solid #333333;
+  fill: #333333;
+}
+
+.video__replay:active path {
+  border: 4px solid #333333;
+  fill: #333333;
+  opacity: 0.3;
+}
+
+.video__subtitles:hover path {
+  border: 4px solid #333333;
+  fill: #333333;
+}
+
+.video__subtitles:active path {
+  border: 4px solid #333333;
+  fill: #333333;
+  opacity: 0.3;
+}
+
+.video__fullscreen:hover polygon {
+  border: 4px solid #333333;
+  fill: #333333;
+}
+
+.video__fullscreen:active polygon {
+  border: 4px solid #333333;
+  fill: #333333;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .video {
-    padding-bottom: 10px;
+    padding-bottom: 69px;
     background-color: white;
   }
 
@@ -51,7 +150,95 @@
   }
 
   .video img {
-    width: 650px;
+    width: 648px;
+  }
+
+  .video__line {
+    width: 648px;
+    height: 93px;
+    left: 60px;
+    top: 652px;
+    background: rgba(10, 10, 10, 0.6);
+  }
+
+  .video__bar {
+    top: 18px;
+    left: 93px;
+    width: 389px;
+    background-color: #ffffff;
+    opacity: 0.2;
+  }
+
+  .video__toggle {
+    top: 42px;
+    left: 205px;
+  }
+
+  .video__fullscreen polygon {
+    fill: #ffffff;
+  }
+
+  .video__controls {
+    width: 648px;
+    height: 93px;
+    left: 60px;
+    top: 652px;
+    background: none;
+  }
+
+  .video path {
+    fill: #ffffff;
+  }
+
+  .video__replay svg {
+    top: 36px;
+    left: 35px;
+  }
+
+  .video__subtitles svg {
+    top: 37px;
+    left: 524px;
+  }
+
+  .video__fullscreen svg {
+    top: 37px;
+    left: 587px;
+  }
+
+  .video__replay:hover path {
+    border: 4px solid #ffffff;
+    fill: #ffffff;
+    opacity: 0.6;
+  }
+
+  .video__replay:active path {
+    border: 4px solid #ffffff;
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  .video__subtitles:hover path {
+    border: 4px solid #ffffff;
+    fill: #ffffff;
+    opacity: 0.6;
+  }
+
+  .video__subtitles:active path {
+    border: 4px solid #ffffff;
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  .video__fullscreen:hover polygon {
+    border: 4px solid #ffffff;
+    fill: #ffffff;
+    opacity: 0.6;
+  }
+
+  .video__fullscreen:active polygon {
+    border: 4px solid #ffffff;
+    fill: #ffffff;
+    opacity: 0.3;
   }
 }
 
@@ -59,7 +246,7 @@
 @media (min-width: @desktop-width) {
   .video {
     width: 1198px;
-    padding-bottom: 57px;
+    padding-bottom: 113px;
     background-color: white;
   }
 
@@ -68,10 +255,44 @@
   }
 
   .video__discription {
-    padding-bottom: 69px;
+    padding-bottom: 71px;
   }
 
   .video img {
     width: 800px;
+  }
+
+  .video__line {
+    width: 800px;
+    height: 93px;
+    left: 198px;
+    top: 630px;
+    background: rgba(10, 10, 10, 0.6);
+  }
+
+  .video__controls {
+    left: 198px;
+    top: 630px;
+  }
+
+  .video__subtitles svg {
+    top: 36px;
+    left: 675px;
+  }
+
+  .video__fullscreen svg {
+    top: 36px;
+    left: 738px;
+  }
+
+  .video__bar {
+    top: 17px;
+    left: 93px;
+    width: 540px;
+  }
+
+  .video__toggle {
+    top: 41px;
+    left: 205px;
   }
 }

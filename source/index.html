@@ -44,22 +44,10 @@
             </picture>
           </a>
         </nav>
-        <script>
-          var navMain = document.querySelector('.main-nav');
-          var navToggle = document.querySelector('.main-nav__toggle');
 
-          navMain.classList.remove('main-nav--nojs');
 
-          navToggle.addEventListener('click', function() {
-            if (navMain.classList.contains('main-nav--closed')) {
-              navMain.classList.remove('main-nav--closed');
-              navMain.classList.add('main-nav--opened');
-            } else {
-              navMain.classList.add('main-nav--closed');
-              navMain.classList.remove('main-nav--opened');
-            }
-          });
-        </script>
+
+
       </header>
 
       <main class="page-main">
@@ -102,21 +90,21 @@
 
         <section class="features">
           <div class="features__small features__small--home">
-            <svg width="75" height="72">
+            <svg viewBox="0 0 70 80">
               <use xlink:href="#icon-house"></use>
             </svg>
             <h3>Жилье</h3>
             <p>Рекодмендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="features__small features__small--gifts">
-            <svg width="75" height="72">
+            <svg viewBox="0 0 70 80">
               <use xlink:href="#icon-gift"></use>
             </svg>
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </div>
           <div class="features__small features__small--food">
-            <svg width="75" height="72">
+            <svg viewBox="0 0 70 80">
               <use xlink:href="#icon-burger"></use>
             </svg>
             <h3>Еда</h3>
@@ -222,5 +210,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

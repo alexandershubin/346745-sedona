@@ -33,7 +33,7 @@ gulp.task("js", function() {
   return gulp.src(["source/js/app.js"
     ])
     .pipe(gulp.dest("build/js"))
-    .pipe(uglifyjs())
+    .pipe(uglify())
     .pipe(rename("app.min.js"))
     .pipe(gulp.dest("build/js"));
 });
@@ -93,5 +93,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "js", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "js", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

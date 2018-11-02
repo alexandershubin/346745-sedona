@@ -1,4 +1,5 @@
 .avatar {
+  position: relative;
   height: 158px;
   text-align: center;
   width: 100%;
@@ -15,9 +16,16 @@
   padding-top: 52px;
 }
 
-.avatar__corner {
-  width: 100%;
-  padding-top: 33px;
+.avatar::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 132px;
+  left: 0;
+  width: 320px;
+  height: 26px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -45,8 +53,13 @@
     width: 60%;
   }
 
-  .avatar__corner {
-    padding-top: 53px;
+  .avatar::after {
+    content: "";
+    top: 233px;
+    left: 0;
+    width: 770px;
+    height: 60px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
   }
 }
 
@@ -64,7 +77,11 @@
     padding-top: 103px;
   }
 
-  .avatar__corner {
-    padding-top: 53px;
+  .avatar::after {
+    content: "";
+    top: 243px;
+    width: 1200px;
+    height: 60px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 }

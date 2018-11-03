@@ -3,6 +3,12 @@
   padding-bottom: 28px;
 }
 
+.main-map iframe {
+  position: absolute;
+  display: block;
+  width: 320px;
+}
+
 @media (min-width: @tablet-width) {
   .main-map__picture img {
     width: 100%;
@@ -11,5 +17,15 @@
   .main-map {
     padding-top: 0;
     padding-bottom: 28px;
+  }
+
+  .main-map iframe {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-map iframe {
+    width: 1200px;
   }
 }

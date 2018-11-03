@@ -1,60 +1,30 @@
 .advantages {
   margin: 0 auto;
-  padding-top: 24px;
   background-color: #eeeeee;
 }
 
-.advantages__square h3 {
+.advantages h3 {
   font-size: 18px;
   margin: 0;
-  padding-top: 3px;
+  padding-top: 26px;
   padding-bottom: 6px;
 }
 
-.advantages__square p {
-  width: 280px;
+.advantages p {
   line-height: 22px;
   color: #333333;
-  border-bottom: 1px solid #d6d6d6;
   margin: 0;
-  padding-top: 12px;
   margin-left: 20px;
-  padding-bottom: 26px;
-}
-
-.advantages__road h3 {
-  font-size: 18px;
-  margin: 0;
-  padding-top: 27px;
-  padding-bottom: 6px;
-}
-
-.advantages__road p {
-  width: 280px;
-  line-height: 22px;
-  color: #333333;
-  border-bottom: 1px solid #d6d6d6;
-  margin: 0;
+  margin-right: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-top: 12px;
-  margin-left: 20px;
   padding-bottom: 26px;
-}
-
-.advantages__tourist h3 {
-  font-size: 18px;
-  margin: 0;
-  padding-top: 27px;
-  padding-bottom: 6px;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .advantages__tourist p {
-  width: 280px;
-  line-height: 22px;
-  color: #333333;
-  margin: 0;
-  padding-top: 12px;
-  margin-left: 20px;
-  padding-bottom: 26px;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -73,9 +43,9 @@
     width: 159px;
     font-size: 21px;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 45px;
     padding-left: 49px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
   }
 
   .advantages__square p {
@@ -98,9 +68,9 @@
     width: 132px;
     font-size: 21px;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 45px;
     padding-left: 62px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
   }
 
   .advantages__road p {
@@ -123,13 +93,13 @@
     width: 145px;
     font-size: 21px;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 45px;
     padding-left: 55px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
   }
 
   .advantages__tourist p {
-    width: 146px;
+    width: 150px;
     line-height: 21px;
     color: #333333;
     padding-left: 15px;
@@ -143,6 +113,10 @@
 
 
 @media (min-width: @desktop-width) {
+  .advantages {
+    padding-bottom: 21px;
+  }
+
   .advantages__small {
     width: 300px;
   }
@@ -155,5 +129,20 @@
 
   .advantages__small p {
     padding-top: 19px;
+  }
+
+  .advantages__square p {
+    width: 290px;
+    margin-left: -47px;
+  }
+
+  .advantages__road p {
+    width: 260px;
+    margin-left: -32px;
+  }
+
+  .advantages__tourist p {
+    width: 260px;
+    margin-left: -17px;
   }
 }

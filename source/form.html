@@ -6,6 +6,13 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="picturefill.js" async>
+  </script>
   </head>
 
   <body>
@@ -119,19 +126,19 @@
               <legend>Посещенные<br>достопремечательности:</legend>
               <ul class="attraction__list">
                 <li class="attraction__item">
-                  <input class="visually-hidden attraction__input" type="checkbox" name="bridge" id="attraction-bridge" checked="">
+                  <input class="visually-hidden attraction__input" type="checkbox" name="bridge" id="attraction-bridge" checked=""tabindex="1">
                   <label for="attraction-bridge">Мост Дьявола</label>
                 </li>
                 <li class="attraction__item">
-                  <input class="visually-hidden attraction__input" type="checkbox" name="bell" id="attraction-bell" checked="">
+                  <input class="visually-hidden attraction__input" type="checkbox" name="bell" id="attraction-bell" checked="" tabindex="2">
                   <label for="attraction-bell">Гора-Колокол</label>
                 </li>
                 <li class="attraction__item">
-                  <input class="visually-hidden attraction__input" type="checkbox" name="park" id="attraction-park" checked="">
+                  <input class="visually-hidden attraction__input" type="checkbox" name="park" id="attraction-park" checked="" tabindex="3">
                   <label for="attraction-park">Слайд-парк</label>
                 </li>
                 <li class="attraction__item attraction__item--action">
-                  <input class="visually-hidden attraction__input" type="checkbox" name="crag" id="attraction-crag">
+                  <input class="visually-hidden attraction__input" type="checkbox" name="crag" id="attraction-crag" tabindex="4">
                   <label for="attraction-crag">Красные скалы</label>
                 </li>
               </ul>
@@ -141,10 +148,10 @@
           <section class="glory">
             <div>
               <h3>Опишите свои эмоции:</h3>
-                <textarea class="glory__letter-box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea class="glory__letter glory__letter--box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
             <div class="glory__block">
-              <a class="glory__find button" href="#">Отправить отзыв</a>
+              <button class="glory__find button" type="submit">Отправить отзыв</button>
               <p class="glory__discription">
                 * &#8212; Обязательные поля
               </p>
@@ -197,8 +204,8 @@
           <h2>Что то пошло не так!</h2>
           <p>Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
         </div>
-        <div class="gap__button small-button">
-          <a class="small-button button" href="#">ок</a>
+        <div class="gap__button gap-small">
+          <a class="gap-small__button button" href="#">ок</a>
         </div>
       </section>
 
@@ -207,8 +214,8 @@
           <h2>Ваш отзыв отправлен!</h2>
           <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         </div>
-        <div class="modal__button big-button">
-          <a class="big-button" href="#">Закрыть окно</a>
+        <div class="modal__button modal__button--big">
+          <a class="big-button button" href="#">Закрыть окно</a>
         </div>
       </section>
     </div>

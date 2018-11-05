@@ -2,14 +2,14 @@
   background-color: #ffffff;
 }
 
-.pictures__item__title {
+.pictures__title {
   position: relative;
   text-align: left;
   line-height: 24px;
   margin: 0;
 }
 
-.pictures__item__title h4 {
+.pictures__title h4 {
   text-transform: uppercase;
   text-align: left;
   line-height: 24px;
@@ -18,58 +18,12 @@
   padding-left: 20px;
 }
 
-.pictures__item__title p {
+.pictures__title p {
   font-size: 14px;
   text-align: left;
   color: #333333;
   margin: 0;
   padding-bottom: 7px;
-  padding-left: 20px;
-}
-
-.pictures__item__number {
-  border-bottom: 1px solid #e5e5e5;
-  padding: 0;
-  padding-left: 57px;
-  padding-bottom: 16px;
-}
-
-.pictures__item__likes {
-  border-bottom: 1px solid #e5e5e5;
-  padding: 0;
-  padding-left: 57px;
-  padding-bottom: 15px;
-}
-
-.pictures__item__road {
-  border-bottom: 1px solid #e5e5e5;
-  padding: 0;
-  padding-left: 57px;
-  padding-bottom: 16px;
-}
-
-.pictures__item__beauty {
-  position: relative;
-  text-align: left;
-  line-height: 24px;
-  margin: 0;
-}
-
-.pictures__item__beauty h4 {
-  text-transform: uppercase;
-  text-align: left;
-  line-height: 24px;
-  margin: 0;
-  padding-top: 7px;
-  padding-left: 20px;
-}
-
-.pictures__item__beauty p {
-  font-size: 14px;
-  text-align: left;
-  color: #333333;
-  margin: 0;
-  padding-bottom: 9px;
   padding-left: 20px;
 }
 
@@ -106,6 +60,52 @@
   top: 62px;
   left: 20px;
   opacity: 0.3;
+}
+
+.pictures__item--number {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+  padding-left: 57px;
+  padding-bottom: 16px;
+}
+
+.pictures__item--likes {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+  padding-left: 57px;
+  padding-bottom: 15px;
+}
+
+.pictures__item--road {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+  padding-left: 57px;
+  padding-bottom: 16px;
+}
+
+.pictures__item--beauty {
+  position: relative;
+  text-align: left;
+  line-height: 24px;
+  margin: 0;
+}
+
+.pictures__item--beauty h4 {
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 7px;
+  padding-left: 20px;
+}
+
+.pictures__item--beauty p {
+  font-size: 14px;
+  text-align: left;
+  color: #333333;
+  margin: 0;
+  padding-bottom: 9px;
+  padding-left: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -154,7 +154,7 @@
     opacity: 0.3;
   }
 
-  .pictures__item__title {
+  .pictures__title {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -162,24 +162,24 @@
     margin: 0;
   }
 
-  .pictures__item__title h4 {
+  .pictures__title h4 {
     padding-top: 7px;
     margin: 0;
   }
 
-  .pictures__item__title p {
+  .pictures__title p {
     margin: 0;
     padding-bottom: 0;
   }
 
-  .pictures__item__number {
+  .pictures__item--number {
     border-bottom: none;
     padding: 0;
     padding-right: 21px;
     padding-top: 20px;
   }
 
-  .pictures__item__beauty {
+  .pictures__item--beauty {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -187,25 +187,25 @@
     margin: 0;
   }
 
-  .pictures__item__beauty h4 {
+  .pictures__item--beauty h4 {
     padding-top: 8px;
     margin: 0;
   }
 
-  .pictures__item__beauty p {
+  .pictures__item--beauty p {
     font-size: 14px;
     margin: 0;
     padding-bottom: 0;
   }
 
-  .pictures__item__likes {
+  .pictures__item--likes {
     border-bottom: none;
     padding: 0;
     padding-right: 30px;
     padding-top: 21px;
   }
 
-  .pictures__item__road {
+  .pictures__item--road {
     border-bottom: none;
     padding: 0;
     padding-right: 37px;
@@ -242,7 +242,7 @@
     fill: #ffffff;
   }
 
-  .pictures__item__title {
+  .pictures__title {
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
     width: 1200px;
@@ -250,18 +250,18 @@
     top: 319px;
   }
 
-  .pictures__item__title h4 {
+  .pictures__title h4 {
     color: #ffffff;
     margin: 0;
     padding-top: 17px;
   }
 
-  .pictures__item__title p {
+  .pictures__title p {
     color: #ffffff;
     margin: 0;
   }
 
-  .pictures__item__number {
+  .pictures__item--number {
     border-bottom: none;
     padding: 0;
     padding-right: 23px;
@@ -287,7 +287,7 @@
     opacity: inherit;
   }
 
-  .pictures__item__beauty {
+  .pictures__item--beauty {
     position: absolute;
     width: 400px;
     height: 80px;
@@ -295,7 +295,7 @@
     background: rgba(10, 10, 10, 0.3);
   }
 
-  .pictures__item__beauty h4 {
+  .pictures__item--beauty h4 {
     text-align: left;
     margin: 0;
     padding-left: 20px;
@@ -303,19 +303,19 @@
     color: #ffffff;
   }
 
-  .pictures__item__beauty p {
+  .pictures__item--beauty p {
     color: #ffffff;
     margin: 0;
     text-align: left;
     padding-left: 20px;
   }
 
-  .pictures__item__road {
+  .pictures__item--road {
     padding-top: 30px;
     color: #ffffff;
   }
 
-  .pictures__item__likes {
+  .pictures__item--likes {
     padding-top: 30px;
     color: #ffffff;
   }

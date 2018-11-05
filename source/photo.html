@@ -6,6 +6,13 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="picturefill.js" async>
+  </script>
   </head>
 
   <body>
@@ -56,7 +63,7 @@
           </div>
           <ul class="pictures__list">
             <li class="pictures__item pictures__item--big">
-              <a class="pictures__item__img" href="#">
+              <a class="pictures__item pictures__item--img" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
@@ -66,8 +73,8 @@
                   <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="фото 1">
                 </picture>
               </a>
-              <div class="pictures__item__title">
-                <div class="pictures__item__part">
+              <div class="pictures__title">
+                <div class="pictures__item">
                   <h4>Нeродные просторы</h4>
                   <p>Автор фото: Борис</p>
                 </div>
@@ -80,11 +87,11 @@
                     </g>
                   </g>
                 </svg>
-                <div class="pictures__item__number">1350</div>
+                <div class="pictures__item pictures__item--number">1350</div>
               </div>
             </li>
             <li class="pictures__item pictures__item--middle">
-              <a class="pictures__item__img" href="#">
+              <a class="pictures__item pictures__item--img" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
@@ -94,8 +101,8 @@
                   <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="фото 2">
                 </picture>
               </a>
-              <div class="pictures__item__beauty">
-                <div class="pictures__item__part">
+              <div class="pictures__item pictures__item--beauty">
+                <div class="pictures__item pictures__item--part">
                   <h4>Местная растительность</h4>
                   <p>Автор фото: Сергей</p>
                 </div>
@@ -108,11 +115,11 @@
                     </g>
                   </g>
                 </svg>
-                <div class="pictures__item__likes">143</div>
+                <div class="pictures__item pictures__item--likes">143</div>
               </div>
             </li>
             <li class="pictures__item pictures__item--middle">
-              <a class="pictures__item__img" href="#">
+              <a class="pictures__item pictures__item--img" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
@@ -122,8 +129,8 @@
                   <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="фото 3">
                 </picture>
               </a>
-              <div class="pictures__item__beauty">
-                <div class="pictures__item__part">
+              <div class="pictures__item pictures__item--beauty">
+                <div class="pictures__item pictures__item--part">
                   <h4>Дорога на север</h4>
                   <p>Автор фото: Петр</p>
                 </div>
@@ -136,11 +143,11 @@
                     </g>
                   </g>
                 </svg>
-                <div class="pictures__item__road">96</div>
+                <div class="pictures__item pictures__item--road">96</div>
               </div>
             </li>
             <li class="pictures__item pictures__item--middle">
-              <a class="pictures__item__img" href="#">
+              <a class="pictures__item pictures__item--img" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
@@ -150,8 +157,8 @@
                   <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="фото 4">
                 </picture>
               </a>
-              <div class="pictures__item__beauty">
-                <div class="pictures__item__part">
+              <div class="pictures__item pictures__item--beauty">
+                <div class="pictures__item pictures__item--part">
                   <h4>Мост Дьявола</h4>
                   <p>Автор фото: Антон</p>
                 </div>
@@ -164,7 +171,7 @@
                     </g>
                   </g>
                 </svg>
-                <div class="pictures__item__likes">254</div>
+                <div class="pictures__item pictures__item--likes">254</div>
               </div>
             </li>
           </ul>

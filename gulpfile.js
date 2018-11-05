@@ -31,11 +31,10 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/css"));
 });
 gulp.task("js", function() {
-  return gulp.src(["source/js/app.js"
+  return gulp.src(["source/js/*.js"
     ])
     .pipe(gulp.dest("build/js"))
     .pipe(uglify())
-    .pipe(rename("app.min.js"))
     .pipe(gulp.dest("build/js"));
 });
 gulp.task("html", function() {
@@ -102,5 +101,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "js", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "js", "css", "sprite", "html", "images"));
 gulp.task("start", gulp.series("build", "server"));

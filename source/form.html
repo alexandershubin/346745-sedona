@@ -31,9 +31,9 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button">
+          <a class="main-nav__toggle" href="#">
             <span class="visually-hidden">Открыть меню</span>
-          </button>
+          </a>
           <a class="page-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
@@ -81,7 +81,7 @@
               <div class="information__discription">
                 <label class="information__box" for="tel-number"><span>КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</label>
                 <div class="information__telephone">
-                  <input class="information__user" id="tel-number" type="tel" name="tel" placeholder="Введите телефон" required="">
+                  <input class="information__user" id="tel-number" type="tel" name="tel" placeholder="Введите телефон" required="" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
                   <a class="information__phone" href="#">
                     <img src="img/icon-phone.svg" width="20" height="20" alt="Телефон">
                   </a>
@@ -90,7 +90,7 @@
               <div class="information__discription">
                 <label class="information__box" for="email-field">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
                 <div class="information__telephone">
-                  <input class="information__user" id="email-field" type="email" name="email" placeholder="Введите e-mail" required="">
+                  <input class="information__email" id="email-field" type="email" name="email" placeholder="Введите e-mail" required="">
                   <a class="information__phone" href="#">
                     <img src="img/icon-mail.svg" width="20" height="20" alt="Конвертик">
                   </a>
@@ -149,7 +149,7 @@
                 <textarea class="glory__letter glory__letter--box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
             <div class="glory__block">
-              <button class="glory__find button" type="submit">Отправить отзыв</button>
+              <button class="glory__find button" type="submit" onClick=" form_submit()">Отправить отзыв</button>
               <p class="glory__discription">
                 * &#8212; Обязательные поля
               </p>
@@ -197,26 +197,27 @@
         </div>
       </footer>
 
-      <section class="gap">
+      <section class="gap" id="gap-id">
         <div class="gap__window">
           <h2>Что то пошло не так!</h2>
           <p>Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
         </div>
-        <div class="gap__button gap-small">
+        <div class="gap__button gap-small" onClick="modal_none('gap-id')">
           <a class="gap-small__button button" href="#">ок</a>
         </div>
       </section>
 
-      <section class="modal">
+      <section class="modal" id="modal-id">
         <div class="modal__window">
           <h2>Ваш отзыв отправлен!</h2>
           <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         </div>
-        <div class="modal__button modal__button--big">
-          <a class="big-button button" href="#">Закрыть окно</a>
+        <div class="modal__button modal__button--big" onClick="modal_none('modal-id')">
+          <button class="big-button button" href="#">Закрыть окно</button>
         </div>
       </section>
     </div>
     <script src="js/app.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

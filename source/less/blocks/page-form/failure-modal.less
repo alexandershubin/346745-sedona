@@ -1,19 +1,20 @@
-.gap {
+.failure-modal {
   display: none;
   position: fixed;
-  top: 60px;
-  width: 320px;
-  height: 280px;
+  top: 100px;
+  max-width: 320px;
+  left: 50%;
+  margin-left: -160px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
   z-index: 4;
 }
 
-.gap__window {
+.failure-modal__window {
   background-color: #ffffff;
 }
 
-.gap__window h2 {
+.failure-modal__window h2 {
   text-transform: uppercase;
   font-size: 19px;
   font-weight: 700;
@@ -23,23 +24,23 @@
   padding-top: 46px;
 }
 
-.gap__window p {
+.failure-modal__window p {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 45px;
+  padding-right: 45px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.gap-small {
-  width: 257px;
+.failure-modal__small {
+  padding-bottom: 35px;
   padding-left: 63px;
 }
 
-.gap-small__button {
+.failure-modal__button {
   display: block;
   width: 180px;
   font-size: 21px;
@@ -53,31 +54,33 @@
 }
 
 @media (min-width: @tablet-width) {
-  .gap {
-    position: fixed;
-    width: 400px;
-    height: 347px;
-    margin-left: 184px;
+  .failure-modal {
+    margin-left: -200px;
+    max-width: 400px;
   }
 
-  .gap__window h2 {
-    width: 210px;
+  .failure-modal__window h2 {
+    width: 250px;
     font-size: 30px;
-    font-weight: 700;
     line-height: 40px;
+    padding-top: 64px;
   }
 
-  .gap-small__button {
-    width: 272px;
-  }
-
-  .gap-small {
+  .failure-modal__button {
     display: block;
+    width: 260px;
+    font-size: 21px;
+    background-color: #81b3d2;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    padding-left: 10px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .gap {
-    margin-left: 400px;
+  .failure-modal__small {
+    padding-bottom: 49px;
+    padding-left: 63px;
   }
 }

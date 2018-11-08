@@ -81,7 +81,7 @@
               <div class="information__discription">
                 <label class="information__box" for="tel-number"><span>КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</label>
                 <div class="information__telephone">
-                  <input class="information__user" id="tel-number" type="tel" name="tel" placeholder="Введите телефон" required="" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                  <input class="information__user" id="tel-number" type="tel" name="tel" placeholder="Введите телефон" required="">
                   <a class="information__phone" href="#">
                     <img src="img/icon-phone.svg" width="20" height="20" alt="Телефон">
                   </a>
@@ -124,19 +124,19 @@
               <legend>Посещенные<br>достопримечательности:</legend>
               <ul class="attraction__list">
                 <li class="attraction__item">
-                  <input class="visually-hidden attraction__input" type="checkbox" name="bridge" id="attraction-bridge" checked="" tabindex="1">
+                  <input class="visually-hidden attraction__input" type="checkbox" name="bridge" id="attraction-bridge" checked="">
                   <label for="attraction-bridge">Мост Дьявола</label>
                 </li>
                 <li class="attraction__item">
-                  <input class="visually-hidden attraction__input" type="checkbox" name="bell" id="attraction-bell" checked="" tabindex="2">
+                  <input class="visually-hidden attraction__input" type="checkbox" name="bell" id="attraction-bell" checked="">
                   <label for="attraction-bell">Гора-Колокол</label>
                 </li>
                 <li class="attraction__item">
-                  <input class="visually-hidden attraction__input" type="checkbox" name="park" id="attraction-park" checked="" tabindex="3">
+                  <input class="visually-hidden attraction__input" type="checkbox" name="park" id="attraction-park" checked="">
                   <label for="attraction-park">Слайд-парк</label>
                 </li>
                 <li class="attraction__item attraction__item--action">
-                  <input class="visually-hidden attraction__input" type="checkbox" name="crag" id="attraction-crag" tabindex="4">
+                  <input class="visually-hidden attraction__input" type="checkbox" name="crag" id="attraction-crag">
                   <label for="attraction-crag">Красные скалы</label>
                 </li>
               </ul>
@@ -149,7 +149,7 @@
                 <textarea class="glory__letter glory__letter--box" name="text-letter" id="text-letter-field" rows="10" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
             <div class="glory__block">
-              <button class="glory__find button" type="submit" onClick=" form_submit()">Отправить отзыв</button>
+              <button class="glory__find button" type="submit">Отправить отзыв</button>
               <p class="glory__discription">
                 * &#8212; Обязательные поля
               </p>
@@ -201,29 +201,26 @@
         </div>
       </footer>
 
-      <section class="gap" id="gap-id">
-        <div class="gap__window">
+      <section class="failure-modal">
+        <div class="failure-modal__window">
           <h2>Что то пошло не так!</h2>
           <p>Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
         </div>
-        <div class="gap__button gap-small" onClick="modal_none('gap-id')">
-          <span class="visually-hidden">кнопка ок</span>
-          <a class="gap-small__button button" href="#">ок</a>
+        <div class="failure-modal__small">
+          <a class="failure-modal__button button" href="#">ок</a>
         </div>
       </section>
 
-      <section class="modal" id="modal-id">
-        <div class="modal__window">
+      <section class="success-modal">
+        <div class="success-modal__window">
           <h2>Ваш отзыв отправлен!</h2>
-          <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
         </div>
-        <div class="modal__button modal__button--big" onClick="modal_none('modal-id')">
-          <span class="visually-hidden">кнопка закрыть</span>
-          <a class="big-button button" href="#">Закрыть окно</a>
+        <div class="success-modal__big">
+          <a class="success-modal__button button" href="#">Закрыть окно</a>
         </div>
       </section>
     </div>
     <script src="js/app.js"></script>
-    <script src="js/modal.js"></script>
   </body>
 </html>

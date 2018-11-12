@@ -8,6 +8,7 @@
   justify-content: space-between;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 700;
   list-style: none;
   margin: 0;
   padding-left: 54px;
@@ -35,7 +36,7 @@
   content: "";
   position: absolute;
   left: -81px;
-  top: -13px;
+  top: -15px;
   width: 46px;
   height: 46px;
   border-radius: 10%;
@@ -46,7 +47,7 @@
 .attraction__input:checked + label::after {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: -62px;
   width: 25px;
   height: 16px;
@@ -88,18 +89,20 @@
 
 @media (min-width: @tablet-width) {
   .attraction {
+    width: 494px;
     order: 1;
     padding-top: 28px;
   }
 
-  .attraction fieldset {
-    padding-right: 80px;
-    padding-left: 80px;
+  .attraction__list {
+    width: 437px;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .attraction legend {
     position: relative;
-    font-size: 22px;
+    font-size: 21px;
     margin-bottom: 57px;
   }
 
@@ -121,24 +124,25 @@
     right: -78px;
   }
 
-  .attraction__list {
-    width: 443px;
-  }
-
   .attraction__item {
+    padding: 0;
+    padding-left: 69px;
     margin-bottom: 62px;
-    padding-left: 45px;
-    padding-right: 30px;
   }
 
-  .attraction__item--action {
-    margin-right: -12px;
+  .attraction__item:nth-child(4) {
+    margin-right: -13px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .attraction {
+    width: 960px;
     padding-top: 29px;
+  }
+
+  .attraction__list {
+    width: 100%;
   }
 
   .attraction legend {
@@ -148,16 +152,21 @@
   .attraction legend::before {
     width: 282px;
     top: 26px;
-    left: 18px;
+    left: 0;
   }
 
   .attraction legend::after {
     width: 282px;
     top: 26px;
-    right: 14px;
+    right: -3px;
   }
 
-  .attraction__list {
-    width: 940px;
+  .attraction__item {
+    padding: 0;
+    padding-left: 80px;
+  }
+
+  .attraction__item:nth-child(4) {
+    margin-right: 0;
   }
 }

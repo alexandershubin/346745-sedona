@@ -1,6 +1,6 @@
 .features {
   position: relative;
-  text-align: left;
+  text-align: start;
   padding-left: 71px;
   background-color: white;
   margin: 0 auto;
@@ -11,7 +11,7 @@
 .features__small--home svg {
   position: absolute;
   top: 25px;
-  left: 19px;
+  left: 22px;
   width: 40px;
   height: 44px;
   fill: #81b3d2;
@@ -20,7 +20,7 @@
 .features__small--gifts svg {
   position: absolute;
   top: 154px;
-  left: 23px;
+  left: 25px;
   width: 40px;
   height: 44px;
   fill: #81b3d2;
@@ -29,14 +29,13 @@
 .features__small--food svg {
   position: absolute;
   top: 270px;
-  left: 16px;
+  left: 19px;
   width: 40px;
   height: 44px;
   fill: #81b3d2;
 }
 
 .features__small h3 {
-  font-weight: 700;
   font-size: 18px;
   margin: 0;
 }
@@ -46,12 +45,7 @@
   color: #333333;
   margin: 0;
   padding-top: 15px;
-  padding-bottom: 28px;
-  padding-right: 30px;
-}
-
-.features__small.features__small--space {
-  display: none;
+  padding-bottom: 27px;
 }
 
 @media (min-width: @tablet-width) {
@@ -67,7 +61,7 @@
   .features__small--home svg {
     position: absolute;
     top: 59px;
-    left: 85px;
+    left: 90px;
     width: 80px;
     height: 84px;
     fill: #81b3d2;
@@ -76,7 +70,7 @@
   .features__small--gifts svg {
     position: absolute;
     top: 56px;
-    left: 603px;
+    left: 608px;
     width: 80px;
     height: 84px;
     fill: #81b3d2;
@@ -85,7 +79,7 @@
   .features__small--food svg {
     position: absolute;
     top: 61px;
-    left: 340px;
+    left: 345px;
     width: 80px;
     height: 84px;
     fill: #81b3d2;
@@ -101,36 +95,21 @@
     padding-bottom: 7px;
   }
 
-  .features__small p {
-    padding-right: 4px;
-    padding-top: 14px;
-  }
-
-  .features__small.features__small--food {
-    width: 160px;
-  }
-
   .features__small.features__small--gifts {
-    margin-right: -4px;
     order: 3;
-  }
-
-  .features__small.features__small--space {
-    display: block;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .features {
-    padding-bottom: 53px;
     background-color: white;
   }
 
   .features__small--home svg {
     position: absolute;
     top: 59px;
-    left: 155px;
+    left: 158px;
     width: 84px;
     height: 81px;
     fill: #81b3d2;
@@ -139,7 +118,7 @@
   .features__small--gifts svg {
     position: absolute;
     top: 56px;
-    left: 963px;
+    left: 967px;
     width: 80px;
     height: 84px;
     fill: #81b3d2;
@@ -148,28 +127,13 @@
   .features__small--food svg {
     position: absolute;
     top: 60px;
-    left: 556px;
+    left: 561px;
     width: 80px;
     height: 84px;
     fill: #81b3d2;
   }
 
-  .features__small.features__small--home p {
-    width: 254px;
-    margin-left: -44px;
-  }
-
-  .features__small.features__small--gifts {
-    margin-right: 0;
-  }
-
-  .features__small.features__small--food p {
-    width: 285px;
-    margin-left: -61px;
-  }
-
-  .features__small.features__small--gifts p {
-    width: 230px;
-    margin-left: -29px;
+  .features__small {
+    width: 270px;
   }
 }

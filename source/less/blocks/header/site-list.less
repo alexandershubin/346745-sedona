@@ -53,16 +53,20 @@
 
   .site-list__item {
     width: 20%;
-    padding-top: 4px;
+    padding-top: 2px;
     background-color: #ffffff;
   }
 
-  .site-list__item:nth-child(2) {
-    padding-right: 150px;
+  .site-list__item.site-list__item--active {
+    padding-right: 155px;
   }
 
-  .site-list__item:nth-child(4) {
-    margin-left: -4px;
+  .site-list__item--right {
+    margin-left: -6px;
+  }
+
+  .site-list__item--left {
+    margin-left: 0;
   }
 
   .site-list__item a {
@@ -79,7 +83,6 @@
     &:hover {
       color: #81b3d2;
       background-color: #ffffff;
-      box-shadow: none;
     }
 
     &:active {
@@ -95,7 +98,15 @@
     width: 1200px;
   }
 
-  .site-list__item:nth-child(2) {
+  .site-list__item.site-list__item--active {
     padding-right: 240px;
+  }
+
+  .site-list__item--right {
+    margin-left: 0;
+  }
+
+  .site-list__item--left {
+    margin-left: 0;
   }
 }

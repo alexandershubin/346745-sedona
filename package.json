@@ -1,7 +1,15 @@
 {
-  "name": "sedona",
-  "version": "15.0.0",
-  "private": true,
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "dependencies": {
+    "del": "^4.0.0",
+    "editorconfig": "^0.15.0",
+    "gulp-lintspaces": "^1.0.0",
+    "normalize.less": "^1.0.0"
+  },
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
@@ -24,18 +32,6 @@
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
-  "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "gulp start"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
   "editorconfig-cli": [
     "*.json",
     "*.js",
@@ -47,9 +43,13 @@
   "engines": {
     "node": "8.12"
   },
-  "dependencies": {
-    "editorconfig": "^0.15.0",
-    "gulp-lintspaces": "^1.0.0",
-    "normalize.less": "^1.0.0"
-  }
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "editorconfig": "editorconfig-cli",
+    "start": "gulp start",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint"
+  },
+  "version": "15.0.0"
 }

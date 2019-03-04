@@ -4,7 +4,6 @@
 }
 
 .glory h3 {
-  font-weight: 700;
   padding-top: 17px;
   padding-bottom: 17px;
 }
@@ -14,7 +13,7 @@
 }
 
 
-.glory__letter {
+.glory__letter-box {
   width: 257px;
   height: 142px;
   font-size: 18px;
@@ -30,15 +29,33 @@
   display: none;
 }
 
-.glory__find {
-  width: 280px;
-  padding-top: 17px;
+.glory__find.button {
+  display: block;
+  width: 260px;
+  font-size: 21px;
+  background-color: #81b3d2;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 16px;
   padding-bottom: 16px;
   padding-right: 10px;
   padding-left: 10px;
-  margin-top: 45px;
+  margin-top: 43px;
   margin-left: 20px;
   margin-bottom: 48px;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  background-color: #669ec0;
+}
+
+.button:active {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .glory__find:disabled {
@@ -76,7 +93,7 @@
     right: 39px;
   }
 
-  .glory__letter {
+  .glory__letter-box {
     font-weight: 700;
     line-height: 26px;
     width: 626px;
@@ -99,12 +116,12 @@
     color: #333333;
   }
 
-  .glory__find {
-    width: 324px;
+  .glory__find.button {
+    width: 284px;
     padding-right: 26px;
     padding-left: 14px;
     margin-top: 51px;
-    margin-left: 1px;
+    margin-left: -1px;
     margin-bottom: 72px;
   }
 }
@@ -127,20 +144,17 @@
     right: 49px;
   }
 
-  .glory__letter {
+  .glory__letter-box {
     width: 936px;
     height: 144px;
     padding-left: 22px;
-    padding-top: 17px;
-    margin-left: -1px;
   }
 
-  .glory__find {
-    width: 480px;
-    padding-left: 28px;
+  .glory__find.button {
+    width: 427px;
+    padding-left: 29px;
     margin-top: 49px;
     margin-bottom: 77px;
-    margin-left: -2px;
   }
 
   .glory__block p {

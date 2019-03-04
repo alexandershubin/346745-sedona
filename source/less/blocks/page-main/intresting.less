@@ -5,10 +5,9 @@
 }
 
 .intresting__header {
-  font-weight: 700;
   font-size: 21px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 28px;
 }
 
 .intresting__discription {
@@ -16,22 +15,35 @@
   margin: 0;
   padding-top: 20px;
   padding-bottom: 34px;
-  padding-right: 15px;
-  padding-left: 15px;
   color: #333333;
 }
 
-.intresting__discription.intresting__discription--space {
-  display: none;
-}
-
-.intresting__find {
+.intresting__find.button {
+  display: block;
   width: 260px;
   margin-left: 20px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: #81b3d2;
+  color: white;
+  text-decoration: none;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  background-color: #669ec0;
+}
+
+.intresting__find.button:active {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .intresting__find:disabled {
@@ -40,27 +52,21 @@
 
 @media (min-width: @tablet-width) {
   .intresting {
-    padding-bottom: 57px;
+    padding-bottom: 59px;
   }
 
   .intresting__header {
     font-size: 30px;
-    padding-top: 56px;
+    padding-top: 57px;
   }
 
   .intresting__discription {
     padding-top: 31px;
-    padding-bottom: 43px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-bottom: 40px;
   }
 
-  .intresting__discription.intresting__discription--space {
-    display: block;
-  }
-
-  .intresting__find {
-    margin-left: 156px;
+  .intresting__find.button {
+    margin-left: 154px;
     padding-right: 100px;
     padding-left: 98px;
   }
@@ -81,7 +87,7 @@
     padding-bottom: 47px;
   }
 
-  .intresting__find {
+  .intresting__find.button {
     margin-left: 371px;
     padding-right: 100px;
     padding-left: 97px;
